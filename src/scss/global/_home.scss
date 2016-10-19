@@ -1,0 +1,30 @@
+.home {
+	background: url(../img/bg1.png) no-repeat fixed center; 
+	background-size: cover;
+	width: 97.5vw;
+	height:95vh;
+	margin-top: 2.5vh;
+}
+
+.home__title {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.home__title__date, .home__title__title {
+	color: white;
+	position: absolute;
+	font-family: 'Europa-Bold';
+}
+
+.home__title__date {
+	font-size: 18rem;
+	opacity: 0.2;
+}
+
+.home__title__title {
+	font-size: 5rem;
+}
