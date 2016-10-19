@@ -1,0 +1,41 @@
+{
+  "name": "hetic-p2019-groupe15",
+  "version": "0.0.1",
+  "description": "Projet de front premier trimestre, HETIC P2019 G2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Zahil/hetic-p2019-groupe15.git"
+  },
+  "keywords": [
+    "front",
+    "hetic",
+    "P2019",
+    "g2"
+  ],
+  "author": "Hetic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Zahil/hetic-p2019-groupe15/issues"
+  },
+  "homepage": "https://github.com/T-Zahil/hetic-p2019-groupe15#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "plumber": "^0.4.8"
+  }
+}
