@@ -8,7 +8,8 @@ var gulp 		 = require('gulp'),
 	sourcemaps 	 = require('gulp-sourcemaps'),
 	concat		 = require('gulp-concat'),
 	plumber      = require('gulp-plumber'),
-	uglify		 = require('gulp-uglify');
+	uglify		 = require('gulp-uglify'),
+    modernizr    = require('gulp-modernizr');
 
 // Task HTML
 gulp.task('html', () => {
@@ -59,7 +60,7 @@ gulp.task('hot-reload', function() {
     sync.init({ server: 'dist/' });
     gulp.watch('src/*.html', ['html']);
     gulp.watch('src/img/*', ['images']);
-    gulp.watch('src/js/**/*.js', ['scripts']);
+    gulp.watch('src/scripts/**/*.js', ['scripts']);
     gulp.watch('src/fonts/**/*', ['fonts']);
     gulp.watch('src/scss/**/*.scss', ['style']);
     gulp.watch('src/*.html').on('change', sync.reload);
@@ -72,5 +73,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img/'));
 });
 
+//Task Modernizr
+gulp.task('modernizr', function() {
+  gulp.src('src/scripts/*.js')
+    .pipe(modernizr())
+    .pipe(gulp.dest("dist/js"))
+});
+
 //Default run all the tasks
-gulp.task('default', ['scripts', 'fonts', 'style', 'images', 'html', 'hot-reload']);
+gulp.task('default', ['scripts', 'fonts', 'style', 'images', 'html', 'hot-reload', 'modernizr']);
