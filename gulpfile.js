@@ -60,7 +60,7 @@ gulp.task('hot-reload', function() {
     sync.init({ server: 'dist/' });
     gulp.watch('src/*.html', ['html']);
     gulp.watch('src/img/*', ['images']);
-    gulp.watch('src/scripts/**/*.js', ['scripts']);
+    gulp.watch('src/js/**/*.js', ['scripts']);
     gulp.watch('src/fonts/**/*', ['fonts']);
     gulp.watch('src/scss/**/*.scss', ['style']);
     gulp.watch('src/*.html').on('change', sync.reload);
@@ -75,7 +75,7 @@ gulp.task('images', function() {
 
 //Task Modernizr
 gulp.task('modernizr', function() {
-  gulp.src('src/scripts/*.js')
+  gulp.src('src/js/*.js')
     .pipe(modernizr())
     .pipe(gulp.dest("dist/js"))
 });
