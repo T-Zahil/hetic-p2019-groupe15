@@ -8,7 +8,12 @@ var gulp 		 = require('gulp'),
 	sourcemaps 	 = require('gulp-sourcemaps'),
 	concat		 = require('gulp-concat'),
 	plumber      = require('gulp-plumber'),
+<<<<<<< HEAD
 	uglify		 = require('gulp-uglify');
+=======
+	uglify		 = require('gulp-uglify'),
+    modernizr    = require('gulp-modernizr');
+>>>>>>> develop
 
 // Task HTML
 gulp.task('html', () => {
@@ -72,5 +77,17 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img/'));
 });
 
+<<<<<<< HEAD
 //Default run all the tasks
 gulp.task('default', ['scripts', 'fonts', 'style', 'images', 'html', 'hot-reload']);
+=======
+//Task Modernizr
+gulp.task('modernizr', function() {
+  gulp.src('src/js/*.js')
+    .pipe(modernizr())
+    .pipe(gulp.dest("dist/js"))
+});
+
+//Default run all the tasks
+gulp.task('default', ['scripts', 'fonts', 'style', 'images', 'html', 'hot-reload', 'modernizr']);
+>>>>>>> develop

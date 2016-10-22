@@ -1,16 +1,36 @@
+<<<<<<< HEAD
 .home {
 	background: url(../img/bg1.png) no-repeat fixed center; 
+=======
+/* * * *
+* GLOBAL
+* * * */
+
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../img/bg1.jpeg) no-repeat fixed center; 
+>>>>>>> develop
 	background-size: cover;
 	width: 97.5vw;
 	height:95vh;
 	margin-top: 2.5vh;
 }
 
+<<<<<<< HEAD
+=======
+/* * * *
+* TITLE BLOCK
+* * * */
+
+>>>>>>> develop
 .home__title {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+<<<<<<< HEAD
 	height: 100vh;
 }
 
@@ -21,10 +41,47 @@
 }
 
 .home__title__date {
+=======
+}
+
+.home__titleDate, .home__titleTitle {
+	position: absolute;
+	font-family: 'Europa-Bold';
+	color: white;
+}
+
+.home__titleDate {
+>>>>>>> develop
 	font-size: 18rem;
 	opacity: 0.2;
 }
 
+<<<<<<< HEAD
 .home__title__title {
 	font-size: 5rem;
+=======
+.home__titleTitle {
+	font-size: 5rem;
+}
+
+/* * * *
+* SCROLL BLOCK
+* * * */
+.home__scroll {
+	align-self: flex-end;
+}
+
+.home__scrollText {
+	font-family: 'Dinpro-Light';
+	font-size: 2rem;
+	color: white;
+}
+
+.home__scrollLine {
+	width: 1px;
+	height: 8vh;
+	margin-left: 50%;
+	margin-top: 2vh;
+	background-color: white;
+>>>>>>> develop
 }
