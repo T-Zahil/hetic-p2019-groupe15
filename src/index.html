@@ -21,7 +21,7 @@
 
 		<div class="home">
 			<div class="home__title">
-				<div class="home__titleDate">2016</div>
+				<div class="home__titleDate"></div>
 				<div class="home__titleTitle"></div>
 			</div>
 			<div class="home__scroll">Scroll</div>
@@ -36,9 +36,18 @@
             $(".home__titleTitle").typed({
                 strings: ["RETROSPECTIVE"],
                 // text typed speed
-                typeSpeed: 150,
+                typeSpeed: 110,
                 // time before typing starts
                 startDelay: 800,
+                // show cursor
+                showCursor: false,
+            });
+            $(".home__titleDate").typed({
+                strings: ["2016"],
+                // text typed speed
+                typeSpeed: 80,
+                // time before typing starts
+                startDelay: 2800,
                 // show cursor
                 showCursor: false,
             });
