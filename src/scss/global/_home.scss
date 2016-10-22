@@ -1,4 +1,11 @@
+/* * * *
+* GLOBAL
+* * * */
+
 .home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background: url(../img/bg1.jpeg) no-repeat fixed center; 
 	background-size: cover;
 	width: 97.5vw;
@@ -6,18 +13,21 @@
 	margin-top: 2.5vh;
 }
 
+/* * * *
+* TITLE BLOCK
+* * * */
+
 .home__title {
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 }
 
 .home__titleDate, .home__titleTitle {
-	color: white;
 	position: absolute;
 	font-family: 'Europa-Bold';
+	color: white;
 }
 
 .home__titleDate {
@@ -27,4 +37,25 @@
 
 .home__titleTitle {
 	font-size: 5rem;
+}
+
+/* * * *
+* SCROLL BLOCK
+* * * */
+.home__scroll {
+	align-self: flex-end;
+}
+
+.home__scrollText {
+	font-family: 'Dinpro-Light';
+	font-size: 2rem;
+	color: white;
+}
+
+.home__scrollLine {
+	width: 1px;
+	height: 8vh;
+	margin-left: 50%;
+	margin-top: 2vh;
+	background-color: white;
 }
