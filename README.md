@@ -1,14 +1,8 @@
 # hetic-p2019-groupe15
 
-<<<<<<< HEAD
-Version 0.0.3
-
-#Installation
-=======
 Version 0.0.4
 
 # Installation
->>>>>>> develop
 
 ```
 git clone https://github.com/T-Zahil/hetic-p2019-groupe15
@@ -17,19 +11,12 @@ git checkout develop
 npm install
 ```
 
-<<<<<<< HEAD
-#Working on the project
-=======
 # Working on the project
->>>>>>> develop
 
 Just type the following commande into the main directory : 
 ```
 gulp
 ```
-<<<<<<< HEAD
-It will be launch all the gulp tasks like SASS transpiler, files compress, hot-reload etc...
-=======
 It will be launch all the gulp tasks like SASS transpiler, files compress, hot-reload etc...
 
 # Github Process
@@ -60,5 +47,4 @@ git merge --squash develop
 git commit -m "Version X.X.X"
 # Don't forget to return to the develop branch to work !
 git checkout develop
-``
->>>>>>> develop
+```
