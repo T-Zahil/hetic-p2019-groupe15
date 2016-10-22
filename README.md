@@ -47,4 +47,4 @@ git merge --squash develop
 git commit -m "Version X.X.X"
 # Don't forget to return to the develop branch to work !
 git checkout develop
-``
+```
