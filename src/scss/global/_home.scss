@@ -43,19 +43,24 @@
 * SCROLL BLOCK
 * * * */
 .home__scroll {
+	display: flex;
+	justify-content: center;
 	align-self: flex-end;
+	position: relative;
 }
 
 .home__scrollText {
+	align-self: flex-start;
+	position: absolute;
 	font-family: 'Dinpro-Light';
 	font-size: 2rem;
 	color: white;
 }
 
 .home__scrollLine {
+	align-self: flex-end;
 	width: 1px;
 	height: 8vh;
-	margin-left: 50%;
-	margin-top: 2vh;
+	margin-top: 8vh;
 	background-color: white;
 }
