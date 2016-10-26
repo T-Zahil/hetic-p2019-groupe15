@@ -8,8 +8,35 @@
 	justify-content: center;
 	background: url(../img/bg1.jpeg) no-repeat fixed center; 
 	background-size: cover;
-	width: 97.5vw;
-	height:95vh;
+	width: 100vw;
+	height: 100vh;
+
+	@include medium {
+		width: 97.5vw;
+		height: 95vh;
+	}
+}
+
+/* * * *
+* NAVBAR
+* * * */
+
+.navbar {
+	align-self: flex-start;
+	self-align: inherit;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	height: 7vh;
+	width: 95vw;
+}
+
+.navbar__about {
+	color: white;
+	font-family: 'Dinpro-Medium';
+	font-size: 1.2rem;
+	text-decoration: none!important;
 }
 
 /* * * *
@@ -30,17 +57,26 @@
 }
 
 .home__titleDate {
-	font-size: 18rem;
+	font-size: 12rem;
 	opacity: 0.2;
+
+	@include medium {
+		font-size: 18rem;
+	}
 }
 
 .home__titleTitle {
-	font-size: 5rem;
+	font-size: 3rem;
+
+	@include medium {
+		font-size: 5rem;
+	}
 }
 
 /* * * *
 * SCROLL BLOCK
 * * * */
+
 .home__scroll {
 	display: flex;
 	justify-content: center;
@@ -52,14 +88,14 @@
 	align-self: flex-start;
 	position: absolute;
 	font-family: 'Dinpro-Light';
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: white;
 }
 
 .home__scrollLine {
 	align-self: flex-end;
-	width: 1px;
+	width: 1.4px;
 	height: 8vh;
-	margin-top: 8vh;
+	margin-top: 5vh;
 	background-color: white;
 }
