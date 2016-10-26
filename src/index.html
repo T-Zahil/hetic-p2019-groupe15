@@ -19,7 +19,7 @@
 
 		</div>
 
-		<div class=" home">
+		<div class="home">
 			<div class="home__title">
 				<div class="home__titleDate"></div>
 				<div class="home__titleTitle"></div>
@@ -32,6 +32,12 @@
 
     </div>
 
+	<div class="section page">
+		<div class="home">
+			<p> Test</p>
+        </div>
+
+    </div>
 	<div class="section page">
 		<div class="home">
 			<p> Test</p>
@@ -66,16 +72,25 @@
         });
     </script>
 	<script>
-		$(document).ready(function() {
-			$(".section").css("min-height", $(window).height() + "px");
-			$(".wrapper").sectionsnap({
-				delay : 100
-				, selector : '.section'
-				, reference : 1
-				, animationTime : 600
-			});
-		});
-	</script>
+				$(function() {
+					$.scrollify({
+						section : ".section",
+		sectionName : "wrapper",
+		interstitialSection : "",
+		easing: "easeOutExpo",
+		scrollSpeed: 1100,
+		offset : 0,
+		scrollbars: true,
+		standardScrollElements: "",
+		setHeights: true,
+		overflowScroll: true,
+		before:function() {},
+		after:function() {},
+		afterResize:function() {},
+		afterRender:function() {}
+					});
+				});
+			</script>
 </body>
 
 </html>
