@@ -41,8 +41,8 @@ git push origin develop
 ```
 # Go to master
 git checkout master
-# Do the merge without history
-git merge --squash develop
+# Do the merge
+git merge develop
 # Commit
 git commit -m "Version X.X.X"
 # Don't forget to return to the develop branch to work !
