@@ -1,0 +1,84 @@
+.page {
+	background: white;
+}
+.month__theme {
+	background: #31c45a; 
+	background-size: cover;
+	width: 48.75vw;
+	height:95vh;
+	margin-top: 2.5vh;
+    display: flex;
+    align-items: center;
+}
+.month__theme h1 {
+    font-family: 'Europa-Bold';
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-bottom: 0;
+    color: white;
+}
+.month__content {
+	background:white;
+	position:absolute;
+	box-shadow: 2px 2px 2px  #444;
+	width:48.75vw;
+	top:36vh;
+	padding:2.5vh;
+	margin-left:2.5vw;
+	border:1px solid #dedede;
+	z-index:1;
+	height:25vh;
+}
+.month__contentTitle {
+	
+}
+.month__contentText {
+	
+}
+.right__content {
+	background: white; 
+	background-size: cover;
+	width: 48.75vw;
+	height:95vh;
+	margin-top: 2.5vh;
+	display: flex;
+    align-items: center;
+}
+.img__month {
+	background: url(../img/smoker.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    right: 1vw;
+    width: 55.75vw;
+    height: 60vh;
+}
+.month__informations {
+    display:flex;
+	align-self:flex-end;
+    font-size: 8rem;
+    color:white;
+    margin-left:5vw;
+    opacity:0.3;
+    font-family:'Dynpro-Light';
+}
+.user__answer{
+	display:flex;
+	align-self:flex-end;
+    font-size: 1.5rem;
+    padding:1rem;
+    font-family:'Dynpro-Light';
+}
+.user__answer p {
+	margin-bottom:0;
+}
+.user__response{
+	margin-left:auto;
+	font-family:'DINPro-Medium';
+	align-self: flex-end;
+}
+.user__response span:hover{
+	text-decoration: line-through;
+	color: #31c45a;
+	cursor:pointer;
+}
