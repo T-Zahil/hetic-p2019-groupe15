@@ -33,7 +33,8 @@
 
 .navbar__about {
 	color: white;
-	font-family: 'Dinpro-Medium';
+	font-family: 'Dinpro';
+	font-weight: 500;
 	font-size: 1.2rem;
 	text-decoration: none!important;
 }
@@ -50,7 +51,7 @@
 
 .home__titleDate, .home__titleTitle {
 	position: absolute;
-	font-family: 'Europa-Bold';
+	font-family: 'Europa';
 	color: white;
 }
 
@@ -84,7 +85,8 @@
 .home__scrollText {
 	align-self: flex-start;
 	position: absolute;
-	font-family: 'Dinpro-Light';
+	font-family: 'Dinpro';
+	font-weight: 300;
 	font-size: 1.5rem;
 	color: white;
 }
