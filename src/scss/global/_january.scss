@@ -1,3 +1,8 @@
+.january .month__img {
+    background: url(../img/smoker.png) no-repeat fixed center;
+    background-size: cover;
+}
+
 .month__theme {
 	background: #31c45a; 
 	background-size: cover;
@@ -52,7 +57,7 @@
 }
 .month__informations {
     display:flex;
-	align-self:flex-end;
+    align-self:flex-end;
     font-size: 8rem;
     color:white;
     margin-left:5vw;
