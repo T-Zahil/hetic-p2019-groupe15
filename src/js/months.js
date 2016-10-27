@@ -1,5 +1,4 @@
 setTimeout(function(){
-    console.log('coucou');
     $('.month__imgWrapper').css({
         'width': '68vw',
         'height': '33vh',
