@@ -27,7 +27,7 @@ $(function(){
     $(".home__titleDate").typed({
       strings: ["2016"],
                         // text typed speed
-                        typeSpeed: 80,
+                        typeSpeed: 200,
                         // time before typing starts
                         startDelay: 800,
                         // show cursor
