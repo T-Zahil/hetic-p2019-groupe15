@@ -16,6 +16,52 @@
 }
 
 /* * * *
+* MONTH FRONT
+* * * */
+.month__infos {
+    position: absolute;
+    width: 88%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.month__infosTitle {
+    align-self: flex-start;
+    height: 12.5%;
+    width: 70%;
+    font-family: 'Dinpro';
+    font-weight: 500;
+    color: white;
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.month__infosContent {
+    width: 100%;
+    height: 70%;
+    background: white;
+}
+
+.month__infosContent h3 {
+    font-family: 'Dinpro';
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 5%;
+    margin: 0;
+}
+
+.month__infosContent p {
+    font-family: dinpro;
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;
+    padding: 0% 5% 5% 5%;
+    line-height: 1.7rem;
+}
+
+/* * * *
 * MONTH BACK
 * * * */
 .month__back {
@@ -36,10 +82,10 @@
 
 .month__backSurvey {
     width: 100%;
-    height: 15%;
+    height: 20%;
 }
 
 .month__backNext {
     width: 100%;
-    height: 10%;
+    height: 5%;
 }
