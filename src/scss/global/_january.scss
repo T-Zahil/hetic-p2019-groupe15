@@ -1,11 +1,21 @@
+/* * * *
+* MONTH BACK
+* * * */
 .month__backPicture {
     background: url(../img/smoker.png);
     background-size: cover;
 }
 
-.month__theme {
-	//background: #31c45a; 
+.month__backTheme {
+    background: #31c45a;
 }
+
+.month__backNext {
+    background: #31c45a;
+}
+
+
+
 .month__theme h1 {
     font-family: 'Europa';
     text-transform: uppercase;
