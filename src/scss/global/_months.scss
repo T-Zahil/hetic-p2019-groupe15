@@ -2,6 +2,9 @@
 * MONTH GLOBAL
 * * * */
 .month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -12,64 +15,61 @@
     }
 }
 
-/* * * *
-* MONTH IMG
-* * * */
-.month__imgWrapper {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    transition: all 1s ease 0s;
-}
+// /* * * *
+// * MONTH IMG
+// * * * */
+// .month__imgWrapper {
+//     // display: flex;
+//     // justify-content: flex-end;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 6;
+//     transition: all 1s ease 0s;
+// }
 
-.month__img {
-    width: 100%;
-    height: 100%;
-}
+// .month__img {
+//     width: 100%;
+//     height: 100%;
+//     z-index: 5;
+// }
 
-/* * * *
-* MONTH BACK
-* * * */
-.month__back {
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
+// /* * * *
+// * MONTH BACK
+// * * * */
+// .month__back {
+//     display:flex;
+//     justify-content: flex-start;
+//     flex-wrap: wrap;
+//     position: absolute;
+//     background-size: cover;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 0;
+// }
 
-.month__back__left {
-    width: 50%;
-    height: 70%;
-    background: #31c45a; 
-}
+// .month__back__left {
+//     width: 50%;
+//     height: 70%;
+//     background: #31c45a; 
+// }
 
-.month__back__clearSpace {
-    width: 50%;
-    height: 70%;
-}
+// .month__back__clearSpace {
+//     width: 50%;
+//     height: 70%;
+// }
 
-.month__back__bottom {
-    width: 100%;
-    height: 30%;
-}
+// .month__back__bottom {
+//     width: 100%;
+//     height: 30%;
+// }
 
-/* * * *
-* MONTH FRONT
-* * * */
-
-.month__content {
-    background:white;
-    box-shadow: 2px 2px 2px  #444;
-    width:48.75vw;
-    top:36vh;
-    padding:2.5vh;
-    margin-left:2.5vw;
-    border:1px solid #dedede;
-    z-index:1;
-    height:25vh;
-}
+// /* * * *
+// * MONTH FRONT
+// * * * */
+// .month__front {
+//     width: 85%;
+//     height: 50%;
+//     background: grey;
+//     z-index: 5;
+// }

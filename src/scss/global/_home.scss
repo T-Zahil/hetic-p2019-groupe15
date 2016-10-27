@@ -1,7 +1,6 @@
 /* * * *
 * GLOBAL
 * * * */
-
 .home {
 	display: flex;
 	align-items: center;
@@ -10,17 +9,17 @@
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
+	overflow: hidden;
 
 	@include medium {
-		width: 97.5vw;
-		height: 95vh;
+		height: calc(100vh - 30px);
+		margin: 15px;
 	}
 }
 
 /* * * *
 * NAVBAR
 * * * */
-
 .navbar {
 	align-self: flex-start;
 	self-align: inherit;
@@ -42,7 +41,6 @@
 /* * * *
 * TITLE BLOCK
 * * * */
-
 .home__title {
 	position: relative;
 	display: flex;
@@ -76,7 +74,6 @@
 /* * * *
 * SCROLL BLOCK
 * * * */
-
 .home__scroll {
 	display: flex;
 	justify-content: center;
