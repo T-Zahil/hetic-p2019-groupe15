@@ -81,8 +81,19 @@
 }
 
 .month__backSurvey {
+    display: flex;
+    flex-direction: column
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 20%;
+}
+
+.backSurvey__question {
+    font-family: 'Dinpro';
+    font-weight: 200;
+    font-size: 1.3rem;
+    padding: 2%;
 }
 
 .month__backNext {
