@@ -22,9 +22,11 @@
     position: absolute;
     width: 88%;
     height: 65%;
+    transform: translateX(110%);
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: all 1s ease 0s;
 }
 
 .month__infosTitle {

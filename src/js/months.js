@@ -1,3 +1,4 @@
+//Month img animation
 setTimeout(function(){
     $('.month__backPicture').css({
         'width': '100%',
@@ -5,7 +6,13 @@ setTimeout(function(){
         'background-position': 'inherit',
     });
     $('.month__img').css({
-        // 'background': 'url(../img/smoker.png',
         'background-attachment': 'inherit',
     });
 }, 2000);
+
+// Month content animation
+setTimeout(function(){
+    $('.month__infos').css({
+        'transform': 'translateX(0)',
+    });
+}, 3000);
