@@ -29,8 +29,9 @@
 
 .month__infosTitle {
     align-self: flex-start;
-    height: 12.5%;
+    height: 9%;
     width: 70%;
+    z-index: 3;
     font-family: 'Dinpro';
     font-weight: 500;
     color: white;
@@ -42,23 +43,24 @@
     width: 100%;
     height: 70%;
     background: white;
+    box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.65);
 }
 
 .month__infosContent h3 {
     font-family: 'Dinpro';
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding: 5%;
     margin: 0;
 }
 
 .month__infosContent p {
     font-family: dinpro;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 200;
     margin: 0;
     padding: 0% 5% 5% 5%;
-    line-height: 1.7rem;
+    line-height: 2.4rem;
 }
 
 /* * * *
