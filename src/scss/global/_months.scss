@@ -31,7 +31,7 @@
 
 .month__infosTitle {
     align-self: flex-start;
-    height: 9%;
+    height: 12%;
     width: 70%;
     z-index: 3;
     font-family: 'Dinpro';
@@ -51,18 +51,18 @@
 .month__infosContent h3 {
     font-family: 'Dinpro';
     font-weight: 500;
-    font-size: 1.7rem;
+    font-size: 5vw;
     padding: 5%;
     margin: 0;
 }
 
 .month__infosContent p {
     font-family: dinpro;
-    font-size: 1.4rem;
+    font-size: 4vw;
     font-weight: 200;
     margin: 0;
     padding: 0% 5% 5% 5%;
-    line-height: 2.4rem;
+    line-height: 5vh;
 }
 
 /* * * *
