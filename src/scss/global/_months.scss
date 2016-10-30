@@ -136,14 +136,7 @@
     margin-bottom: 8vh;
 }
 
-.answer__leftFigure {
+.answer__leftFigure, .answer__rightFigure {
     height: 100%;
-    background-color: red;
-    color: white;
-}
-
-.answer__rightFigure {
-    height: 100%;
-    background-color: grey;
     color: white;
 }
