@@ -5,7 +5,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url(../img/bg1.jpeg) no-repeat fixed center; 
+	background: url(../img/bg1.jpeg) no-repeat fixed center;
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
@@ -16,7 +16,47 @@
 		margin: 15px;
 	}
 }
+/* * * *
+* MENU
+* * * */
 
+.menu {
+ position : absolute;
+ margin-top : 3vh;
+ margin-left : 2vw;
+ background: none;
+  height : 8vh;
+  width : 95vw;
+}
+
+.menu__burgerOpen {
+}
+
+.menu__open {
+float: right;
+color: white !important;
+font: 500 1.2rem 'Dinpro';
+}
+.overlay{
+	position:absolute;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.38);
+    z-index:5;
+    text-align: center;
+}
+.wrap-nav li{
+  list-style:none;
+  text-decoration:none;
+}
+.wrap-nav li a {
+text-align:center;
+  color:white;
+  text-decoration:none;
+}
+.wrap-nav li a:hover{
+text-decoration: line-through;
+}
 /* * * *
 * NAVBAR
 * * * */
@@ -33,8 +73,7 @@
 
 .navbar__about {
 	color: white;
-	font-family: 'Dinpro';
-	font-weight: 500;
+	font-family: 'Dinpro-Medium';
 	font-size: 1.2rem;
 	text-decoration: none!important;
 }
@@ -51,7 +90,7 @@
 
 .home__titleDate, .home__titleTitle {
 	position: absolute;
-	font-family: 'Europa';
+	font-family: 'Europa-Bold';
 	color: white;
 }
 
@@ -85,8 +124,7 @@
 .home__scrollText {
 	align-self: flex-start;
 	position: absolute;
-	font-family: 'Dinpro';
-	font-weight: 300;
+	font-family: 'Dinpro-Light';
 	font-size: 1.5rem;
 	color: white;
 }
