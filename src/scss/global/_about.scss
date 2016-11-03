@@ -27,10 +27,13 @@
 
 }
 
-.aboutTitleEnd{
-	align-self: flex-end;
-	opacity: 0.3;
-	font-size: 70px;
-	top: 30px;
+	.aboutTitleEnd{
+		opacity: 0.3;
+		font-size: 70px;
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		right: 14px;
+		display: block;
 
-}
+	}
