@@ -1,22 +1,22 @@
 /* * * *
 * MONTH BACK
 * * * */
-.month__backPicture {
-    background: url(../img/smoker.png);
+.january .month__backPicture {
+    background: url(../img/january.jpeg);
     background-size: cover;
     background-position-x: 45%;
 }
 
-.month__backTheme {
-    background: #26C281;
+.january .month__backTheme {
+    background: #D64541;
 }
 
-.month__backNext {
-    background: #26C281;
+.january .month__backNext {
+    background: #D64541;
 }
 
-.answer__leftFigure, .answer__rightFigure {
-    background-color: #26C281;
+.january .answer__leftFigure, .answer__rightFigure {
+    background-color: #D64541;
 }
 
 
@@ -79,6 +79,6 @@
 }
 .user__response span:hover{
 	text-decoration: line-through;
-	color: #31c45a;
+	color: #D64541;
 	cursor:pointer;
 }

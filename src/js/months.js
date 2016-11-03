@@ -5,7 +5,6 @@ $(document).ready(function(){
     var january = new Waypoint({
         element: $('.january').find($('.month__back')),
         handler: function(direction) {
-            console.log('coucou');
             animateMonth('.january');
         },
         offset: 20
@@ -15,7 +14,8 @@ $(document).ready(function(){
         element: $('.february'),
         handler: function(direction) {
             animateMonth('.february');
-        }
+        },
+        offset: 20
     });
 
     var march = new Waypoint({
@@ -103,12 +103,12 @@ function animateMonth(name) {
         $('.month__img').css({
             'background-attachment': 'inherit',
         });
-    }, 2000);
+    }, 500);
 
     // Month content animation
     setTimeout(function(){
         $(name).find('.month__infos').css({
             'transform': 'translateX(0)',
         });
-    }, 3000);
+    }, 1000);
 }

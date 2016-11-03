@@ -1,0 +1,20 @@
+/* * * *
+* MONTH BACK
+* * * */
+.february .month__backPicture {
+    background: url(../img/february.png);
+    background-size: cover;
+    background-position-x: 45%;
+}
+
+.february .month__backTheme {
+    background: #E67E22;
+}
+
+.february .month__backNext {
+    background: #E67E22;
+}
+
+.february .answer__leftFigure, .february .answer__rightFigure {
+    background-color: #E67E22;
+}
