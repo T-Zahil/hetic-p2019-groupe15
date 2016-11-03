@@ -30,63 +30,72 @@ $(document).ready(function(){
         element: $('.april'),
         handler: function(direction) {
             animateMonth('.april');
-        }
+        },
+        offset: 20
     });
 
     var may = new Waypoint({
         element: $('.may'),
         handler: function(direction) {
             animateMonth('.may');
-        }
+        },
+        offset: 20
     });
 
     var june = new Waypoint({
         element: $('.june'),
         handler: function(direction) {
             animateMonth('.june');
-        }
+        },
+        offset: 20
     });
 
     var july = new Waypoint({
         element: $('.july'),
         handler: function(direction) {
             animateMonth('.july');
-        }
+        },
+        offset: 20
     });
 
     var august = new Waypoint({
         element: $('.august'),
         handler: function(direction) {
             animateMonth('.august');
-        }
+        },
+        offset: 20
     });
 
     var september = new Waypoint({
         element: $('.september'),
         handler: function(direction) {
             animateMonth('.september');
-        }
+        },
+        offset: 20
     });
 
     var october = new Waypoint({
         element: $('.october'),
         handler: function(direction) {
             animateMonth('.october');
-        }
+        },
+        offset: 20
     });
 
     var november = new Waypoint({
         element: $('.november'),
         handler: function(direction) {
             animateMonth('.november');
-        }
+        },
+        offset: 20
     });
 
     var december = new Waypoint({
         element: $('.december'),
         handler: function(direction) {
             animateMonth('.december');
-        }
+        },
+        offset: 20
     });
 
 });
