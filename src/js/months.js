@@ -96,6 +96,7 @@ function animateMonth(name) {
             'width': '100%',
             'height': '40%',
             'background-position': 'inherit',
+            'position': 'inherit'
         });
         $('.month__img').css({
             'background-attachment': 'inherit',
