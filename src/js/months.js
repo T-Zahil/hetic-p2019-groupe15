@@ -22,7 +22,8 @@ $(document).ready(function(){
         element: $('.march'),
         handler: function(direction) {
             animateMonth('.march');
-        }
+        },
+        offset: 20
     });
 
     var april = new Waypoint({
