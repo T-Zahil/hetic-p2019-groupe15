@@ -43,7 +43,10 @@ gulp.task('fonts', function() {
 
 // Task scripts
 gulp.task('scripts', function() {
-    gulp.src(['src/**/*.js'])
+    return gulp.src([
+        'node_modules/waypoints/lib/jquery.waypoints.min.js',
+        'src/**/*.js'
+        ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     

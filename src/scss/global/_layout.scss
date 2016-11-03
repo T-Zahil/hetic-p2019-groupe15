@@ -7,3 +7,8 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+a:-webkit-any-link {
+    text-decoration: none!important;
+    color: inherit;
+}

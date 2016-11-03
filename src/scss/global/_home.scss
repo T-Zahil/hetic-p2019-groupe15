@@ -1,21 +1,47 @@
 /* * * *
 * GLOBAL
 * * * */
-
 .home {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: url(../img/bg1.jpeg) no-repeat fixed center; 
 	background-size: cover;
-	width: 97.5vw;
-	height:95vh;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	@include medium {
+		height: calc(100vh - 30px);
+		margin: 15px;
+	}
+}
+
+/* * * *
+* NAVBAR
+* * * */
+.navbar {
+	align-self: flex-start;
+	self-align: inherit;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	height: 7vh;
+	width: 95vw;
+}
+
+.navbar__about {
+	color: white;
+	font-family: 'Dinpro';
+	font-weight: 500;
+	font-size: 1.2rem;
+	text-decoration: none!important;
 }
 
 /* * * *
 * TITLE BLOCK
 * * * */
-
 .home__title {
 	position: relative;
 	display: flex;
@@ -25,17 +51,25 @@
 
 .home__titleDate, .home__titleTitle {
 	position: absolute;
-	font-family: 'Europa-Bold';
+	font-family: 'Europa';
 	color: white;
 }
 
 .home__titleDate {
-	font-size: 18rem;
+	font-size: 12rem;
 	opacity: 0.2;
+
+	@include medium {
+		font-size: 18rem;
+	}
 }
 
 .home__titleTitle {
-	font-size: 5rem;
+	font-size: 3rem;
+
+	@include medium {
+		font-size: 5rem;
+	}
 }
 
 /* * * *
@@ -51,15 +85,16 @@
 .home__scrollText {
 	align-self: flex-start;
 	position: absolute;
-	font-family: 'Dinpro-Light';
-	font-size: 2rem;
+	font-family: 'Dinpro';
+	font-weight: 300;
+	font-size: 1.5rem;
 	color: white;
 }
 
 .home__scrollLine {
 	align-self: flex-end;
-	width: 1px;
+	width: 1.4px;
 	height: 8vh;
-	margin-top: 8vh;
+	margin-top: 5vh;
 	background-color: white;
 }
