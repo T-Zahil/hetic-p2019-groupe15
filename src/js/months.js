@@ -3,10 +3,12 @@ $(document).ready(function(){
     // Add a Waypoint for each month. 
     // Each waypoint will trigger the function animateMonth().
     var january = new Waypoint({
-        element: $('.january'),
+        element: $('.january').find($('.month__back')),
         handler: function(direction) {
+            console.log('coucou');
             animateMonth('.january');
-        }
+        },
+        offset: 20
     });
 
     var february = new Waypoint({
