@@ -34,3 +34,14 @@ $(function(){
                         showCursor: false,
                     });
 });
+$(document).ready(function(){
+    $(".menu__BurgerOpen").click(function(){
+        $(".overlay").fadeToggle(200);
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+});
+$('.overlay').on('click', function(){
+    $(".overlay").fadeToggle(200);   
+    $(".menu__BurgerOpen").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
