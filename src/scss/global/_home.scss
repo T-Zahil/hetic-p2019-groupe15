@@ -33,6 +33,9 @@
 
 .menu__burgerOpen {
 margin-left:5vw;
+@include medium {
+	margin-left: 3vw;
+}
 }
 
 .menu__open {

@@ -5,7 +5,11 @@
 float: right;
 color: white !important;
 font: 500 1.2rem 'Dinpro';
+text-transform: uppercase;
 margin-right:8vw;
+@include medium{
+	margin-right: 3vw;
+}
 }
 .about {
 	z-index:5;
@@ -13,16 +17,18 @@ margin-right:8vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(61,61,61,0.80);
+	background-color: rgba(61,61,61,1);
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 	font-family: 'Dinpro';
+	font-weight: medium;
 	color: white;
 	@include medium {
 		height: calc(100vh - 30px);
 		margin: 15px;
+		width: 98vw;
 	}
 }
 
@@ -30,18 +36,37 @@ margin-right:8vw;
 	display: flex;
 	position: absolute;
 	flex-direction: column;
-	width: 40vw;
+	width: 75vw;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	padding-bottom: 10vh;
 	justify-content: center;
+	@include medium {
+	width: 60vw;
+	}
+	@include large {
+	width: 40vw;
+	};
+
+}
+
+.about__container h1 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 
 }
 
 	.aboutTitleEnd{
-		opacity: 0.3;
-		font-size: 70px;
+		opacity: 0.1;
+		font-size: 95px;
+		font-weight: bold;
+		letter-spacing: 5px;
 		position: absolute;
-		bottom: 0;
+		bottom: -3vh;
 		margin: 0;
 		right: 14px;
 		display: block;
+		font-family: 'Europa';
 
 	}
