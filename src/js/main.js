@@ -34,14 +34,32 @@ $(function(){
                         showCursor: false,
                     });
 });
+
+/* * * *
+* FUNCTION DISPLAY MENU BLOCK
+* * * */
 $(document).ready(function(){
-    $(".menu__BurgerOpen").click(function(){
+    $(".menu__burgerOpen").click(function(){
         $(".overlay").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
 });
 $('.overlay').on('click', function(){
     $(".overlay").fadeToggle(200);   
-    $(".menu__BurgerOpen").toggleClass('btn-open').toggleClass('btn-close');
+    $(".menu__burgerOpen").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
+/* * * *
+* FUNCTION DISPLAY ABOUT BLOCK
+* * * */
+$(document).ready(function(){
+    $(".menu__aboutOpen").click(function(){
+        $(".about").fadeToggle(200);
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+});
+$('.about').on('click', function(){
+    $(".about").fadeToggle(200);   
+    $(".menu__aboutOpen").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });

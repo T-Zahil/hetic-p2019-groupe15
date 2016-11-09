@@ -22,14 +22,14 @@
 
 .menu {
  position : absolute;
- margin-top : 3vh;
- margin-left : 2vw;
  background: none;
-  height : 8vh;
-  width : 95vw;
+  height : 100vh;
+  width : 100vw;
+  margin-top: 3vh;
 }
 
 .menu__burgerOpen {
+margin-left:5vw;
 }
 
 .menu__open {
@@ -38,12 +38,23 @@ color: white !important;
 font: 500 1.2rem 'Dinpro';
 }
 .overlay{
+	z-index:99;
 	position:absolute;
-    width: 90%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.38);
-    z-index:5;
-    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dinpro';
+    font-size:25px;
+}
+.wrap-nav {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-between;
+	height: 60vh;
 }
 .wrap-nav li{
   list-style:none;
@@ -54,7 +65,7 @@ text-align:center;
   color:white;
   text-decoration:none;
 }
-.wrap-nav li a:hover{
+.wrap-nav li:hover{
 text-decoration: line-through;
 }
 /* * * *
