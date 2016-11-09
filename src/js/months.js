@@ -107,7 +107,7 @@ function animateMonth(name) {
         $(name).find(".month__backPicture").css({
             'width': '100%',
             'height': '40%',
-            'background-position': 'inherit',
+            'background-position': 'center',
             'position': 'inherit'
         });
         $('.month__img').css({
