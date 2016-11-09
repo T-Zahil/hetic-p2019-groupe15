@@ -15,6 +15,9 @@
 		height: calc(100vh - 30px);
 		margin: 15px;
 	}
+	@include large {
+        overflow-x:hidden;
+	}
 }
 /* * * *
 * MENU
