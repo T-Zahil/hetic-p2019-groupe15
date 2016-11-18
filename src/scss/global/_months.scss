@@ -10,8 +10,8 @@
     height: 100vh;
 
     @include medium {
-        width: 97.5vw;
-        height: 95vh;
+        height: calc(100vh - 30px);
+        width: calc(100vw - 30px);
     }
 }
 

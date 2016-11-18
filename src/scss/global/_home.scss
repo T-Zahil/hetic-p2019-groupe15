@@ -13,7 +13,7 @@
 
 	@include medium {
 		height: calc(100vh - 30px);
-		margin: 15px;
+		width: calc(100vw - 30px);
 	}
 	@include large {
         overflow-x:hidden;
