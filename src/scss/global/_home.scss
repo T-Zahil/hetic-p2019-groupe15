@@ -28,16 +28,12 @@
    background: none;
    height : 100vh;
    width : 100vw;
-   margin-top: 3vh;
    position:fixed;
 }
 
 .menu__burgerOpen {
-	margin-left:5%;
-
-	@include medium {
-		margin-left: 27px;
-	}
+    margin: 35px 0 0 35px;
+    position: fixed;
 }
 
 .menu__open {
