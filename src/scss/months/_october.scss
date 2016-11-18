@@ -1,0 +1,20 @@
+/* * * *
+* OCTOBER
+* * * */
+.october .month__backPicture {
+    background: url(../img/october.png);
+    background-size: cover;
+    background-position-x: 45%;
+}
+
+.october .month__backTheme {
+    background: $health;
+}
+
+.october .month__backNext {
+    background: $health;
+}
+
+.october .answer__leftFigure, .october .answer__rightFigure {
+    background-color: $health;
+}

@@ -1,20 +1,20 @@
 /* * * *
-* MONTH BACK
+* AUGUST
 * * * */
-.april .month__backPicture {
+.august .month__backPicture {
     background: url(../img/april.jpeg);
     background-size: cover;
     background-position-x: 45%;
 }
 
-.april .month__backTheme {
-    background: #E67E22;
+.august .month__backTheme {
+    background: $sport;
 }
 
-.april .month__backNext {
-    background: #E67E22;
+.august .month__backNext {
+    background: $sport;
 }
 
-.april .answer__leftFigure, .april .answer__rightFigure {
-    background-color: ;
+.august .answer__leftFigure, .august .answer__rightFigure {
+    background-color: $sport;
 }

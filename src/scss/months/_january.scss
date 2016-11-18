@@ -8,77 +8,13 @@
 }
 
 .january .month__backTheme {
-    background: #D64541;
+    background: $innovation;
 }
 
 .january .month__backNext {
-    background: #D64541;
+    background: $innovation;
 }
 
 .january .answer__leftFigure, .answer__rightFigure {
-    background-color: #D64541;
-}
-
-
-
-.month__theme h1 {
-    font-family: 'Europa';
-    text-transform: uppercase;
-    font-size: 6rem;
-    margin-bottom: 0;
-    color: white;
-}
-
-.month__contentTitle {
-	
-}
-.month__contentText {
-	
-}
-.right__content {
-	background: white; 
-	background-size: cover;
-	width: 48.75vw;
-	height:95vh;
-	margin-top: 2.5vh;
-	display: flex;
-    align-items: center;
-}
-.img__month {
-	background: url(../img/smoker.png) no-repeat center;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    right: 1vw;
-    width: 55.75vw;
-    height: 60vh;
-}
-.month__informations {
-    display:flex;
-    align-self:flex-end;
-    font-size: 8rem;
-    color:white;
-    margin-left:5vw;
-    opacity:0.3;
-    font-family:'Dinpro';
-}
-.user__answer{
-	display:flex;
-	align-self:flex-end;
-    font-size: 1.5rem;
-    padding:1rem;
-    font-family:'Dinpro';
-}
-.user__answer p {
-	margin-bottom:0;
-}
-.user__response{
-	margin-left:auto;
-	font-family:'Dinpro';
-	align-self: flex-end;
-}
-.user__response span:hover{
-	text-decoration: line-through;
-	color: #D64541;
-	cursor:pointer;
+    background-color: $innovation;
 }

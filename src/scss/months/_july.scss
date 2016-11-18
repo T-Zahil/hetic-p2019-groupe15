@@ -1,0 +1,20 @@
+/* * * *
+* JULY
+* * * */
+.july .month__backPicture {
+    background: url(../img/july.jpg);
+    background-size: cover;
+    background-position-x: 45%;
+}
+
+.july .month__backTheme {
+    background: $sport;
+}
+
+.july .month__backNext {
+    background: $sport;
+}
+
+.july .answer__leftFigure, .july .answer__rightFigure {
+    background-color: $sport;
+}
