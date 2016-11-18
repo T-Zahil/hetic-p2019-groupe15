@@ -2,15 +2,14 @@
 * GLOBAL
 * * * */
 .menu__aboutOpen {
-float: right;
-color: white !important;
-font: 500 1.2rem 'Dinpro';
-text-transform: uppercase;
-margin-right:8vw;
-@include medium{
-	margin-right: 30px;
+	color: white !important;
+	font: 500 1.2rem 'Dinpro';
+	text-transform: uppercase;
+	margin: 35px 35px 0 0;
+	position: fixed;
+	right: 0;
 }
-}
+
 .about {
 	z-index:5;
 	position:absolute;
@@ -42,10 +41,10 @@ margin-right:8vw;
 	padding-bottom: 10vh;
 	justify-content: center;
 	@include medium {
-	width: 60vw;
+		width: 60vw;
 	}
 	@include large {
-	width: 40vw;
+		width: 40vw;
 	};
 
 }
@@ -57,16 +56,16 @@ margin-right:8vw;
 
 }
 
-	.aboutTitleEnd{
-		opacity: 0.1;
-		font-size: 95px;
-		font-weight: bold;
-		letter-spacing: 5px;
-		position: absolute;
-		bottom: -3vh;
-		margin: 0;
-		right: 14px;
-		display: block;
-		font-family: 'Europa';
+.aboutTitleEnd{
+	opacity: 0.1;
+	font-size: 95px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: absolute;
+	bottom: -3vh;
+	margin: 0;
+	right: 14px;
+	display: block;
+	font-family: 'Europa';
 
-	}
+}
