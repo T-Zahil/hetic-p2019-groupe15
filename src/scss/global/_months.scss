@@ -44,9 +44,12 @@
     color: white;
     font-size: 3.3rem;
     text-align: center;
+    text-transform: uppercase;
+
     @include large {
        height:8vh;
     }
+
 }
 
 .month__infosContent {
