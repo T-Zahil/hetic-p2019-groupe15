@@ -6,6 +6,11 @@ $(document).ready(function(){
         element: $('.january').find($('.month__back')),
         handler: function(direction) {
             animateMonth('.january');
+            if(direction == 'down') {
+                $('.menu__about').addClass('menu__about--month');
+            } else if (direction == 'up') {
+                $('.menu__about').removeClass('menu__about--month');
+            }
         },
         offset: 20
     });

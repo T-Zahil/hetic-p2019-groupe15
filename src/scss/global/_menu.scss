@@ -1,13 +1,34 @@
 /* * * *
+* NAVBAR
+* * * */
+.navbar {
+    align-self: flex-start;
+    self-align: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 7vh;
+    width: 95vw;
+}
+
+.navbar__about {
+    color: white;
+    font-family: 'Dinpro';
+    font-size: 1.2rem;
+    text-decoration: none!important;
+}
+
+/* * * *
 * MENU
 * * * */
 
 .menu {
-   position : absolute;
-   background: none;
-   height : 100vh;
-   width : 100vw;
-   position:fixed;
+ position : absolute;
+ background: none;
+ height : 100vh;
+ width : 100vw;
+ position:fixed;
 }
 
 .menu__burgerOpen {
@@ -45,8 +66,8 @@
 	height: 60vh;
 }
 .wrap-nav li{
-  list-style:none;
-  text-decoration:none;
+    list-style:none;
+    text-decoration:none;
 }
 .wrap-nav li a {
     text-align:center;
@@ -58,30 +79,9 @@
 }
 
 /* * * *
-* NAVBAR
-* * * */
-.navbar {
-	align-self: flex-start;
-	self-align: inherit;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: absolute;
-	height: 7vh;
-	width: 95vw;
-}
-
-.navbar__about {
-	color: white;
-	font-family: 'Dinpro';
-	font-size: 1.2rem;
-	text-decoration: none!important;
-}
-
-/* * * *
 * ABOUT
 * * * */
-.menu__aboutOpen {
+.menu__about {
 	color: white !important;
 	font: 500 1.2rem 'Dinpro';
 	text-transform: uppercase;
@@ -136,7 +136,7 @@
 
 }
 
-.aboutTitleEnd{
+.about__title{
 	opacity: 0.1;
 	font-size: 95px;
 	font-weight: bold;
@@ -147,5 +147,8 @@
 	right: 14px;
 	display: block;
 	font-family: 'Europa';
+}
 
+.menu__about--month {
+    color: #000;
 }
