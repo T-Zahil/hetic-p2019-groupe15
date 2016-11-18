@@ -17,19 +17,19 @@
 	}
 	@include large {
         overflow-x:hidden;
-	}
+    }
 }
 /* * * *
 * MENU
 * * * */
 
 .menu {
- position : absolute;
- background: none;
-  height : 100vh;
-  width : 100vw;
-  margin-top: 3vh;
-  position:fixed;
+   position : absolute;
+   background: none;
+   height : 100vh;
+   width : 100vw;
+   margin-top: 3vh;
+   position:fixed;
 }
 
 .menu__burgerOpen {
@@ -41,9 +41,9 @@
 }
 
 .menu__open {
-float: right;
-color: white !important;
-font: 500 1.2rem 'Dinpro';
+    float: right;
+    color: white !important;
+    font: 500 1.2rem 'Dinpro';
 }
 .overlay{
 	z-index:99;
@@ -57,10 +57,10 @@ font: 500 1.2rem 'Dinpro';
     font-family: 'Dinpro';
     font-size:25px;
     @include medium {
-		height: calc(100vh - 30px);
-		margin: 15px;
-		width: 98vw;
-	}
+      height: calc(100vh - 30px);
+      margin: 15px;
+      width: 98vw;
+  }
 }
 .wrap-nav {
 	display:flex;
@@ -74,12 +74,12 @@ font: 500 1.2rem 'Dinpro';
   text-decoration:none;
 }
 .wrap-nav li a {
-text-align:center;
-  color:white;
-  text-decoration:none;
+    text-align:center;
+    color:white;
+    text-decoration:none;
 }
 .wrap-nav li:hover{
-text-decoration: line-through;
+    text-decoration: line-through;
 }
 /* * * *
 * NAVBAR
@@ -106,14 +106,14 @@ text-decoration: line-through;
 * TITLE BLOCK
 * * * */
 .home__title {
-	position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
 }
 
 .home__titleDate, .home__titleTitle {
-	position: absolute;
 	font-family: 'Europa';
 	color: white;
 }
@@ -128,11 +128,19 @@ text-decoration: line-through;
 }
 
 .home__titleTitle {
-	font-size: 3rem;
+    position: absolute;
+    font-size: 3rem;
 
-	@include medium {
-		font-size: 5rem;
-	}
+    @include medium {
+      font-size: 5rem;
+  }
+}
+
+.home__titlePunchline {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Dinpro';
+    font-weight: 200;
 }
 
 /* * * *
@@ -142,7 +150,7 @@ text-decoration: line-through;
 	display: flex;
 	justify-content: center;
 	align-self: flex-end;
-	position: relative;
+	position: absolute;
 }
 
 .home__scrollText {
