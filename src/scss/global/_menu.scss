@@ -1,0 +1,151 @@
+/* * * *
+* MENU
+* * * */
+
+.menu {
+   position : absolute;
+   background: none;
+   height : 100vh;
+   width : 100vw;
+   position:fixed;
+}
+
+.menu__burgerOpen {
+    margin: 35px 0 0 35px;
+    position: fixed;
+}
+
+.menu__open {
+    float: right;
+    color: white !important;
+    font: 500 1.2rem 'Dinpro';
+}
+.overlay{
+	z-index:99;
+	position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(61,61,61,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dinpro';
+    font-size:25px;
+    @include medium {
+      height: calc(100vh - 30px);
+      margin: 15px;
+      width: 98vw;
+  }
+}
+.wrap-nav {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: space-between;
+	height: 60vh;
+}
+.wrap-nav li{
+  list-style:none;
+  text-decoration:none;
+}
+.wrap-nav li a {
+    text-align:center;
+    color:white;
+    text-decoration:none;
+}
+.wrap-nav li:hover{
+    text-decoration: line-through;
+}
+
+/* * * *
+* NAVBAR
+* * * */
+.navbar {
+	align-self: flex-start;
+	self-align: inherit;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	height: 7vh;
+	width: 95vw;
+}
+
+.navbar__about {
+	color: white;
+	font-family: 'Dinpro';
+	font-size: 1.2rem;
+	text-decoration: none!important;
+}
+
+/* * * *
+* ABOUT
+* * * */
+.menu__aboutOpen {
+	color: white !important;
+	font: 500 1.2rem 'Dinpro';
+	text-transform: uppercase;
+	margin: 35px 35px 0 0;
+	position: fixed;
+	right: 0;
+}
+
+.about {
+	z-index:5;
+	position:absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(61,61,61,1);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Dinpro';
+	font-weight: medium;
+	color: white;
+	@include medium {
+		height: calc(100vh - 30px);
+		margin: 15px;
+		width: 98vw;
+	}
+}
+
+.about__container{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	width: 75vw;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	padding-bottom: 10vh;
+	justify-content: center;
+	@include medium {
+		width: 60vw;
+	}
+	@include large {
+		width: 40vw;
+	};
+
+}
+
+.about__container h1 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+}
+
+.aboutTitleEnd{
+	opacity: 0.1;
+	font-size: 95px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: absolute;
+	bottom: -3vh;
+	margin: 0;
+	right: 14px;
+	display: block;
+	font-family: 'Europa';
+
+}
