@@ -1,6 +1,6 @@
 # hetic-p2019-groupe15
 
-Version 0.1.2
+Version 0.1.3
 
 # Installation
 
@@ -33,7 +33,7 @@ git add [yourfile]
 
 3/ Commit and push
 ```
-git commit -m "Your feature description"
+git commit -m "[key] Your feature description"
 git push origin develop
 ```
 
