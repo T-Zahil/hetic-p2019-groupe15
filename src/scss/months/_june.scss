@@ -1,20 +1,24 @@
 /* * * *
 * JUNE
 * * * */
-.june .month__backPicture {
-    background: url(../img/june.jpg);
-    background-size: cover;
-    background-position-x: 45%;
-}
+.june {
+    
+    .month__backPicture {
+        background: url(../img/june.jpg);
+        background-size: cover;
+        background-position-x: 45%;
+    }
 
-.june .month__backTheme {
-    background: $ecology;
-}
+    .month__backTheme {
+        background: $ecology;
+    }
 
-.june .month__backNext {
-    background: $ecology;
-}
+    .month__backNext {
+        background: $ecology;
+    }
 
-.june .answer__leftFigure, .june .answer__rightFigure {
-    background-color: $ecology;
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $ecology;
+    }
+
 }

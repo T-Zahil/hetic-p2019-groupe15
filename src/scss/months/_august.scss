@@ -1,20 +1,24 @@
 /* * * *
 * AUGUST
 * * * */
-.august .month__backPicture {
-    background: url(../img/april.jpeg);
-    background-size: cover;
-    background-position-x: 45%;
-}
+.august {
 
-.august .month__backTheme {
-    background: $sport;
-}
+    .month__backPicture {
+        background: url(../img/april.jpeg);
+        background-size: cover;
+        background-position-x: 45%;
+    }
 
-.august .month__backNext {
-    background: $sport;
-}
+    .month__backTheme {
+        background: $sport;
+    }
 
-.august .answer__leftFigure, .august .answer__rightFigure {
-    background-color: $sport;
+    .month__backNext {
+        background: $sport;
+    }
+
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $sport;
+    }
+
 }

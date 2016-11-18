@@ -1,20 +1,23 @@
 /* * * *
-* MONTH BACK
+* JANUARY
 * * * */
-.january .month__backPicture {
-    background: url(../img/january.jpeg);
-    background-size: cover;
-    background-position-x: 45%;
-}
+.january {
 
-.january .month__backTheme {
+    .month__backPicture {
+        background: url(../img/january.jpeg);
+        background-size: cover;
+        background-position-x: 45%;
+    }
+    .month__backTheme {
     background: $innovation;
-}
+    }
 
-.january .month__backNext {
-    background: $innovation;
-}
+    .month__backNext {
+        background: $innovation;
+    }
 
-.january .answer__leftFigure, .answer__rightFigure {
-    background-color: $innovation;
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $innovation;
+    }
+    
 }
