@@ -119,3 +119,10 @@ function animateMonth(name) {
         });
     }, 1000);
 }
+
+// Stats animation
+$(".answer__leftText, .answer__rightText").click(function(){
+    $('.backSurvey__question').addClass('backSurvey__question--after');
+    $('.answer__leftFigure').addClass('answer__leftFigure--after');
+    $('.answer__rightFigure').addClass('answer__rightFigure--after');
+});
