@@ -49,17 +49,18 @@ $('.overlay').on('click', function(){
     $(".menu__burgerOpen").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
+
 /* * * *
 * FUNCTION DISPLAY ABOUT BLOCK
 * * * */
 $(document).ready(function(){
-    $(".menu__aboutOpen").click(function(){
+    $(".menu__about").click(function(){
         $(".about").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
 });
 $('.about').on('click', function(){
     $(".about").fadeToggle(200);   
-    $(".menu__aboutOpen").toggleClass('btn-open').toggleClass('btn-close');
+    $(".menu__about").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
