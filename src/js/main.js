@@ -64,3 +64,8 @@ $('.about').on('click', function(){
     $(".menu__about").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
+
+$(function() {
+    console.log('coucou');
+    $('.month__backPicture').Lazy();
+});
