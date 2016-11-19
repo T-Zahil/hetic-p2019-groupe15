@@ -118,11 +118,11 @@ function animateMonth(name) {
             'transform': 'translateX(0)',
         });
     }, 1000);
-}
 
-// Stats animation
-$(".answer__leftText, .answer__rightText").click(function(){
-    $('.backSurvey__question').addClass('backSurvey__question--after');
-    $('.answer__leftFigure').addClass('answer__leftFigure--after');
-    $('.answer__rightFigure').addClass('answer__rightFigure--after');
-});
+    // Stats animation
+    $(".answer__leftText, .answer__rightText").click(function(){
+        $(name).find($('.backSurvey__question')).addClass('backSurvey__question--after');
+        $(name).find($('.answer__leftFigure')).addClass('answer__leftFigure--after');
+        $(name).find($('.answer__rightFigure')).addClass('answer__rightFigure--after');
+    });
+}
