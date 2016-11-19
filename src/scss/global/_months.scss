@@ -47,8 +47,12 @@
     text-transform: uppercase;
 
     @include large {
-     height:8vh;
- }
+        height:8vh;
+    }
+
+    @include medium {
+        height: 7%;
+    }
 
 }
 
@@ -134,13 +138,13 @@
     flex-direction: column;
     align-items: center;
     @include large {
-     width:50%;
-     float:right;
-     justify-content: flex-end;
-     flex-direction:row;
-     transform:translateY(-75%);
-     align-items:flex-start;
- }
+       width:50%;
+       float:right;
+       justify-content: flex-end;
+       flex-direction:row;
+       transform:translateY(-75%);
+       align-items:flex-start;
+   }
 }
 
 .backSurvey__question {
