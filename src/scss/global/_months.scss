@@ -37,12 +37,12 @@
 
 .month__infosTitle {
     align-self: flex-start;
-    height: 9%;
+    height: 11%;
     z-index: 3;
     font-family: 'Dinpro';
     font-weight: 500;
     color: white;
-    font-size: 3.3rem;
+    font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
 
@@ -75,7 +75,7 @@
 
 .month__infosContent p {
     font-family: dinpro;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 200;
     margin: 0;
     padding: 0% 5% 5% 5%;
@@ -146,7 +146,7 @@
 .backSurvey__question {
     font-family: 'Dinpro';
     font-weight: 200;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 2%;
 }
 
@@ -184,5 +184,6 @@
 
 .answer__leftFigure, .answer__rightFigure {
     height: 100%;
+    font-size: .7rem;
     color: white;
 }
