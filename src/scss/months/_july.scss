@@ -2,7 +2,7 @@
 * JULY
 * * * */
 .july {
-    
+
     .month__backPicture {
         background-size: cover;
         background-position-x: 45%;
@@ -14,6 +14,14 @@
 
     .month__backNext {
         background: $sport;
+    }
+
+    .answer__leftText {
+        margin-bottom: 2.1vh;
+    }
+
+    .answer__rightText {
+        margin-bottom: 8.9vh;
     }
 
     .answer__leftFigure, .answer__rightFigure {
