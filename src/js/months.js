@@ -109,15 +109,7 @@ $(document).ready(function(){
 function animateMonth(name) {
     //Month img animation
     setTimeout(function(){
-        $(name).find(".month__backPicture").css({
-            'width': '100%',
-            'height': '40%',
-            'background-position': 'center',
-            'position': 'inherit'
-        });
-        $('.month__img').css({
-            'background-attachment': 'inherit',
-        });
+        $(name).find(".month__backPicture").addClass('month__backPicture--active');
     }, 500);
 
     // Month content animation
