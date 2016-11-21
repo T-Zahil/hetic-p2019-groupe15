@@ -226,12 +226,13 @@
 
 .answer__left {
     @include mobile {
-        margin-right: 10vw;  
+        margin-right: 10vw;
     }
 }
 
 .answer__leftFigure, .answer__rightFigure {
     height: 0;
+    width: 0;
     opacity: 0;
     font-size: .7rem;
     color: white;
