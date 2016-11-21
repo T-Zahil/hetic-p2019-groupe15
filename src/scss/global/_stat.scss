@@ -13,25 +13,34 @@
 	display:flex;
 	flex-wrap:wrap;
 	align-items:stretch;
+	position:relative;
 	font-family: 'Dinpro';
+	font-size:1.15rem;
 }
 .stats__description {
 	display:none;
+	position:absolute;
 	width:100%;
 	background:$health;
 	color:white;
+	height:100%;
 	opacity:0.8;
 	text-align:center;
+}
+.stats__description .number {
+	font-size:3rem;
+	display:block;
 }
 .stats__months {
 	width:50%;
 	background-size:cover;
+	position:relative;
 	&:hover .stats__description{
 		display:inline-block;
 		animation-name:fadeStat;
 		animation-duration:0.8s;
 	}
 	@include medium {
-		width: 25%;
+		width: 33.33%;
 	}
 }
