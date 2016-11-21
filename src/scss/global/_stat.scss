@@ -32,10 +32,14 @@
 	display:block;
 }
 .stats__months {
+	transition: all .5s;
 	width:50%;
 	background-size:cover;
 	position:relative;
-	&:hover .stats__description{
+	&:hover {
+		background-size: 120%;
+	}
+	&:hover .stats__description {
 		display:inline-block;
 		animation-name:fadeStat;
 		animation-duration:0.8s;
