@@ -140,3 +140,42 @@
 	display: block;
 	font-family: 'Europa';
 }
+
+
+.bullet-navigation {
+  display: none;
+  position: fixed;
+  right: 3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.bullet-navigation.bullet-navigation--sticky {
+  display: block;
+}
+.bullet-navigation li {
+  display: block;
+  margin: 0 1rem .5em 0;
+}
+.bullet-navigation li.active a {
+  background: #fff;
+  opacity: 0.3;
+}
+.bullet-navigation a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: .7rem;
+  height: .7rem;
+  background: #fff;
+  border: 3px solid white;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+  border-radius: 50%;
+}
+.bullet-navigation a:hover {
+  background: #fff;
+  opacity: 0.3;
+}
