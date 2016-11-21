@@ -16,6 +16,18 @@
         background: $education;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 94%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 38%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
             margin-bottom: 1vh;

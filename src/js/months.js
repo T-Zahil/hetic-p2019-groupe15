@@ -119,5 +119,7 @@ function animateMonth(name) {
         $(name).find($('.backSurvey__question')).addClass('backSurvey__question--after');
         $(name).find($('.answer__leftFigure')).addClass('answer__leftFigure--after');
         $(name).find($('.answer__rightFigure')).addClass('answer__rightFigure--after');
+        $(name).find($('.answer__left')).addClass('answer__left--after');
+        $(name).find($('.answer__right')).addClass('answer__right--after');
     });
 }

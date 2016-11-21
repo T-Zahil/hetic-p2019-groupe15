@@ -16,20 +16,32 @@
         background: $health;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 95%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 36%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
           margin-bottom: 1.8vh;  
-        }
-    }
+      }
+  }
 
-    .answer__rightText {
-        @include mobile {
-           margin-bottom: 9.2vh; 
-        }
-    }
+  .answer__rightText {
+    @include mobile {
+     margin-bottom: 9.2vh; 
+ }
+}
 
-    .answer__leftFigure, .answer__rightFigure {
-        background-color: $health;
-    }
+.answer__leftFigure, .answer__rightFigure {
+    background-color: $health;
+}
 
 }

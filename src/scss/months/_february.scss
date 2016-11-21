@@ -7,12 +7,25 @@
         background-size: cover;
         background-position-x: 45%;
     }
+
     .month__backTheme {
         background: $culture;
     }
 
     .month__backNext {
         background: $culture;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 42%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 88%;
+        }
     }
 
     .answer__leftText {
@@ -23,12 +36,12 @@
 
     .answer__rightText {
         @include mobile {
-           margin-bottom: 1.8vh; 
-        }
-    }
+         margin-bottom: 1.8vh; 
+     }
+ }
 
-    .answer__leftFigure, .answer__rightFigure {
-        background-color: $culture;
-    }
+ .answer__leftFigure, .answer__rightFigure {
+    background-color: $culture;
+}
 
 }

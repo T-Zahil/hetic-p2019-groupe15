@@ -16,6 +16,18 @@
         background: $ecology;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 54%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 78%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
             margin-bottom: 7.7vh;

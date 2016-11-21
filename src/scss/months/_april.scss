@@ -16,6 +16,18 @@
         background: $culture;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 61%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 71%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
             margin-bottom: 6.6vh;

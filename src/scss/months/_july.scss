@@ -16,6 +16,18 @@
         background: $sport;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 93%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 39%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
             margin-bottom: 2.1vh;

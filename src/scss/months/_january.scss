@@ -7,6 +7,7 @@
         background-size: cover;
         background-position-x: 45%;
     }
+    
     .month__backTheme {
         background: $innovation;
     }
@@ -15,9 +16,21 @@
         background: $innovation;
     }
 
+    .answer__left--after {
+        @include large {
+            height: 39%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 91%;
+        }
+    }
+
     .answer__leftText {
         @include mobile {
-           margin-bottom: 9.2vh; 
+            margin-bottom: 9.2vh; 
         }
     }
 
@@ -30,5 +43,5 @@
     .answer__leftFigure, .answer__rightFigure {
         background-color: $innovation;
     }
-    
+
 }
