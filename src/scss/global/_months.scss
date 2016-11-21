@@ -30,6 +30,7 @@
         transform: translateX(110%);
     }
     @include large {
+        transform: translateX(-110%);
         width: 40%;
         height:auto;
         left:3%;
