@@ -1,6 +1,6 @@
 # hetic-p2019-groupe15
 
-Version 0.1.3
+Version 0.2.0
 
 # Installation
 
