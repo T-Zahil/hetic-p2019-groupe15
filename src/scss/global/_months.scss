@@ -1,13 +1,3 @@
-@keyframes Infosmonths {
-   from {
-    left:-500px;
-  }
-
-  to {
-    left:3%;
-  }
-}
-
 /* * * *
 * MONTH GLOBAL
 * * * */
@@ -36,14 +26,15 @@
     align-items: center;
     flex-direction: column;
     transition: all 1s ease 0s;
-    transform: translateX(110%);
+    @include mobile {
+        transform: translateX(110%);
+    }
     @include large {
         width: 40%;
-        left:3%;
         height:auto;
+        left:3%;
+        padding-bottom: 7vh;
         z-index:2;
-        animation-duration: 1s;
-        animation-name: Infosmonths ;
     }
 }
 
@@ -59,7 +50,7 @@
     text-transform: uppercase;
 
     @include large {
-        height:8vh;
+        height:7vh;
     }
 
 
@@ -104,6 +95,11 @@
 .month__back {
     width: 100%;
     height: 100%;
+    @include large {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
 
 .month__backPicture {
@@ -112,22 +108,22 @@
     height: 100%;
     transition: all 1s ease 0s;
     @include large {
+        position: absolute!important;
         width: 65% !important;
-        transform: translateY(18vh);
-        float: right;
         height: 65% !important;
+        right: 15px;
         z-index: 0;
-        animation-duration: 1s;
-        animation-name:Backpicture;
     }
 
 }
 
 .month__backPicture--active {
-    width: 100%;
-    height: 40%;
-    background-position: center;
     position: inherit;
+    @include mobile {
+        width: 100%;
+        height: 40%;
+        background-position: center;
+    }
 }
 
 .month__backTheme {
@@ -136,6 +132,7 @@
     @include large {
         height:100%;
         width:50%;
+        order: -1;
     }
 }
 
@@ -145,17 +142,18 @@
     z-index: 10;
     text-align: center;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     @include large {
-       width:50%;
-       float:right;
-       justify-content: flex-end;
-       flex-direction:row;
-       transform:translateY(-75%);
-       align-items:flex-start;
-   }
+        width: 50%;
+        height: 16%;
+        right: 15px;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-end;
+    }
 }
 
 .backSurvey__question {
@@ -163,7 +161,12 @@
     transition: all 1s ease 0s;
     font-weight: 200;
     font-size: 1.1rem;
-    padding: 9%;
+    @include mobile {
+        padding: 8%;
+    }
+    @include large {
+        margin-left: 5%;
+    }
 }
 
 .backSurvey__question--after {
@@ -175,6 +178,9 @@
     flex-grow: 1;
     font-family: 'Dinpro';
     font-weight: 400;
+    @include large {
+        align-items: center;
+    }
 }
 
 .month__backNext {
@@ -203,7 +209,9 @@
 }
 
 .answer__left {
-    margin-right: 10vw;
+    @include mobile {
+           margin-right: 10vw;  
+    }
 }
 
 .answer__leftFigure, .answer__rightFigure {

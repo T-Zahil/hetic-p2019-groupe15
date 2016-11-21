@@ -17,11 +17,15 @@
     }
 
     .answer__leftText {
-        margin-bottom: 7.7vh;
+        @include mobile {
+            margin-bottom: 7.7vh;
+        }
     }
 
     .answer__rightText {
-        margin-bottom: 3.3vh;
+        @include mobile {
+            margin-bottom: 3.3vh;
+        }
     }
 
     .answer__leftFigure, .answer__rightFigure {
