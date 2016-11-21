@@ -66,6 +66,5 @@ $('.about').on('click', function(){
 });
 
 $(function() {
-    console.log('coucou');
     $('.month__backPicture').Lazy();
 });
