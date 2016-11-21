@@ -109,12 +109,9 @@
     transition: all 1s ease 0s;
     @include large {
         position: absolute!important;
-        width: 65% !important;
-        height: 65% !important;
-        right: 15px;
-        z-index: 0;
+        left: 0;
+        z-index: 11;
     }
-
 }
 
 .month__backPicture--active {
@@ -123,6 +120,13 @@
         width: 100%;
         height: 40%;
         background-position: center;
+    }
+    @include large {
+        width: 65% !important;
+        height: 65% !important;
+        right: 15px;
+        left: inherit;
+        z-index: 0;
     }
 }
 
@@ -220,8 +224,8 @@
 
 .answer__left {
     @include mobile {
-       margin-right: 10vw;  
-   }
+     margin-right: 10vw;  
+ }
 }
 
 .answer__leftFigure, .answer__rightFigure {
