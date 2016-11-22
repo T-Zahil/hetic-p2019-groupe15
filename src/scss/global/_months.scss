@@ -152,8 +152,9 @@
     align-items: center;
     @include large {
         width: 50%;
-        height: 19.5%;
+        height: 15.2%;
         right: 15px;
+        padding-bottom: 15px;
         justify-content: flex-end;
         flex-direction: row;
         align-items: center;
@@ -165,7 +166,7 @@
     font-family: 'Dinpro';
     transition: all 1s ease 0s;
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     @include mobile {
         padding: 8%;
     }
@@ -239,6 +240,9 @@
     transition: all 1s ease 0s;
     @include large {
         order: -1;
+    }
+    @include mobile {
+        width: 100%!important;
     }
 }
 
