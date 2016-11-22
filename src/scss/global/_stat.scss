@@ -13,25 +13,90 @@
 	display:flex;
 	flex-wrap:wrap;
 	align-items:stretch;
+	position:relative;
 	font-family: 'Dinpro';
+	font-size:1.15rem;
 }
 .stats__description {
 	display:none;
+	position:absolute;
 	width:100%;
-	background:$health;
+	align-items:center;
 	color:white;
+	height:100%;
 	opacity:0.8;
 	text-align:center;
+	transition: all .5s;
 }
+.stats__description .number {
+	font-size:3rem;
+	display:block;
+}
+
 .stats__months {
+	transition: all .5s;
 	width:50%;
-	background-size:cover;
-	&:hover .stats__description{
-		display:inline-block;
+	background-size:130%;
+	background-repeat:no-repeat;
+    transition: all 0.3s ease-in-out;
+	position:relative;
+	&:hover {
+    	background-size: 150%;
+	}
+	&:hover .stats__description {
+		display:flex;
+		align-items:center;
 		animation-name:fadeStat;
 		animation-duration:0.8s;
 	}
+	&:hover .stats__description p {
+		width:100%;
+		padding:10px;
+	}
 	@include medium {
-		width: 25%;
+		width: 33.33%;
 	}
 }
+/*** BACKGROUND STAT **/
+
+.january__stat {
+	background: $innovation;
+}
+.february__stat {
+	background: $culture;
+}
+.march__stat {
+	background: $ecology;
+}
+.april__stat {
+	background: $culture;
+}
+.may__stat {
+	background: $health;
+}
+.june__stat {
+	background: $ecology;
+}
+.july__stat {
+	background: $sport;
+}
+.august__stat {
+	background: $sport;
+}
+.september__stat {
+	background: $education;
+}
+.october__stat {
+	background: $health;
+}
+.november__stat {
+	background: $innovation;
+}
+.december__stat {
+	background: black;
+}
+
+
+
+
+
