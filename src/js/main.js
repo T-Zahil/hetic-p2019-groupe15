@@ -79,7 +79,6 @@ $(function() {
 * * * */
 
 
-
 $(function() {
   var wHeight = $( window ).height();
   var scrollTop = $( window ).scrollTop();
@@ -92,12 +91,14 @@ $(function() {
 
       $article.each( function( index ){
         var articleId = $(this).attr('id');
-        if (articleId === undefined){
+        var articleMonth = $(this).find('.month').attr('class');
+        if (articleId === undefined && articleMonth === undefined ){
           articleId = 'article_' + index;
+          var articleMonth = "";
           $(this).attr('id',articleId);
         }
         var articleTitle = $(this).find('h1,h2,h3,h4,h5,h6').first().text();
-        $navigation.append('<li id="b_'+ articleId +'" title="'+ articleTitle +'"><a href="#' + articleId + '"></a></li>');
+        $navigation.append('<div class="tooltip"><li id="b_'+ articleId +'" title="'+ articleTitle +'"><a href="#' + articleId + '"></a><span class="tooltiptext">'+ articleMonth.substr(6,10) +'</span></div></li>');
       });
     }
   }
