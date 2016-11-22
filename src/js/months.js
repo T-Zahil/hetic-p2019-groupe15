@@ -116,7 +116,7 @@ function animateMonth(name) {
 
     setTimeout(function(){
         $(name).find('.month__infosTitle').addClass('month__infosTitle--up');
-    }, 2000);
+    }, 1500);
 
     // Stats animation
     $(name).find($(".answer__leftText, .answer__rightText")).click(function(){
