@@ -220,7 +220,7 @@
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width:100%;
     background-color: black;
     color: #fff;
     font-size:0.8rem;
@@ -229,11 +229,11 @@
     text-align: center;
     text-transform:uppercase;
     padding: 5px 0;
-    border-radius: 6px;
     position: absolute;
     z-index: 1;
     top: -5px;
     right: 105%; 
+    transition: all .2s ease-in-out; 
 }
 .tooltip .tooltiptext::after {
     content: " ";
@@ -246,5 +246,7 @@
     border-color: transparent transparent transparent black;
 }
 .tooltip:hover .tooltiptext {
+    transition: width 0.5s ease;
+    width:100px;
     visibility: visible;
 }
