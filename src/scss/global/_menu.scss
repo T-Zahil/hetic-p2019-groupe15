@@ -1,22 +1,25 @@
 /* * * *
 * NAVBAR
 * * * */
-.navbar {
-    align-self: flex-start;
-    self-align: inherit;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    height: 7vh;
-    width: 95vw;
+.wrapper{
+	position:fixed;
+	z-index:999;
 }
-
+.navbar {
+  align-self: flex-start;
+  self-align: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  height: 7vh;
+  width: 95vw;
+}
 .navbar__about {
-    color: white;
-    font-family: 'Dinpro';
-    font-size: 1.2rem;
-    text-decoration: none!important;
+  color: white;
+  font-family: 'Dinpro';
+  font-size: 1.2rem;
+  text-decoration: none!important;
 }
 
 /* * * *
@@ -30,13 +33,22 @@
     margin: 35px 0 0 35px;
     position: fixed;
     z-index: 99;
+    width: 20px;
 }
-
 .menu__open {
     float: right;
     color: white !important;
     font: 500 1.2rem 'Dinpro';
 }
+.menu__burgerCross{
+	position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+    width: 20px;
+
+}
+
 .overlay{
 	z-index:99;
 	position:absolute;
@@ -97,7 +109,8 @@
 	margin: 35px 35px 0 0;
 	position: fixed;
 	right: 0;
-  z-index: 99;
+  	z-index: 99;
+  	cursor:pointer;
 }
 
 .about {
@@ -126,7 +139,7 @@
 	position: absolute;
 	flex-direction: column;
 	width: 75vw;
-	font-weight: lighter;
+	font: 200 0.9rem 'Dinpro';
 	letter-spacing: 1px;
 	padding-bottom: 10vh;
 	justify-content: center;
