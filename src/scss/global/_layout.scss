@@ -1,7 +1,32 @@
 body {
 	margin: 0;
-    overflow-x:hidden;
+    overflow: hidden;
 }
+
+.toppageborder, .bottompageborder, .leftpageborder, .rightpageborder {
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    @include mobile {
+        display: none;
+    }
+}
+.toppageborder, .bottompageborder {
+    height: 15px;
+    width: 100%;
+    left: 0;
+}
+
+.leftpageborder, .rightpageborder {
+    height: 100%;
+    width: 15px;
+    top: 0;
+}
+
+.leftpageborder {left: 0;}
+.rightpageborder {right: 0;}
+.toppageborder {top: 0;}
+.bottompageborder {bottom: 0;}
 
 .page {
 	display: flex;

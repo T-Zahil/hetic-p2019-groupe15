@@ -8,11 +8,6 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
-
-    @include medium {
-        height: calc(100vh - 30px);
-        width: calc(100vw - 30px);
-    }
 }
 
 /* * * *
@@ -42,26 +37,32 @@
 .month__infosTitle {
     align-self: flex-start;
     height: 11%;
-    z-index: 3;
+    z-index: -1;
     font-family: 'Dinpro';
     font-weight: 500;
     color: white;
     font-size: 3rem;
     text-align: center;
+    padding-left: 5%;
     text-transform: uppercase;
+    transform: translateY(100%);
+    transition: all 1s ease;
 
     @include large {
-        height:7vh;
+        height:6.8vh;
     }
+}
 
-
+.month__infosTitle--up {
+    transform: translateY(0)!important;
+    z-index: 0!important;
 }
 
 .month__infosContent {
     width: 100%;
     height: 75%;
     background: white;
-    box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.65);
+    box-shadow: 0px 7px 40px -7px rgba(0,0,0,0.4);
     @include large {
         height:auto;
     }
@@ -82,6 +83,7 @@
     font-family: dinpro;
     font-size: 1rem;
     font-weight: 200;
+    text-align: justify;
     margin: 0;
     padding: 0% 5% 5% 5%;
     line-height: 4vh;
@@ -152,8 +154,9 @@
     align-items: center;
     @include large {
         width: 50%;
-        height: 16%;
+        height: 15.2%;
         right: 15px;
+        padding-bottom: 15px;
         justify-content: flex-end;
         flex-direction: row;
         align-items: center;
@@ -165,13 +168,14 @@
     font-family: 'Dinpro';
     transition: all 1s ease 0s;
     font-weight: 200;
-    font-size: 1.1rem;
     @include mobile {
         padding: 8%;
+        font-size: 0.9rem;
     }
     @include large {
         width: 25vw;
         margin-left: 5%;
+        font-size: 1.2rem;
     }
 }
 
@@ -239,6 +243,9 @@
     transition: all 1s ease 0s;
     @include large {
         order: -1;
+    }
+    @include mobile {
+        width: 100%!important;
     }
 }
 

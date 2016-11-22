@@ -114,6 +114,10 @@ function animateMonth(name) {
         });
     }, 1000);
 
+    setTimeout(function(){
+        $(name).find('.month__infosTitle').addClass('month__infosTitle--up');
+    }, 1500);
+
     // Stats animation
     $(name).find($(".answer__leftText, .answer__rightText")).click(function(){
         $(name).find($('.backSurvey__question')).addClass('backSurvey__question--after');
