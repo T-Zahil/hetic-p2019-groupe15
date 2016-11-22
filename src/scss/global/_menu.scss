@@ -29,6 +29,7 @@
 .menu__burgerOpen {
     margin: 35px 0 0 35px;
     position: fixed;
+    z-index: 99;
 }
 
 .menu__open {
@@ -96,6 +97,7 @@
 	margin: 35px 35px 0 0;
 	position: fixed;
 	right: 0;
+  z-index: 99;
 }
 
 .about {
