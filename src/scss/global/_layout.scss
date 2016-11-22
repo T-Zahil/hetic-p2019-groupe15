@@ -3,13 +3,28 @@ body {
     overflow-x:hidden;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
+.toppageborder, .bottompageborder {
     position: fixed;
-    box-shadow: inset 0px 0px 0px 15px white;
+    height: 15px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 100;
 }
+
+.leftpageborder, .rightpageborder {
+    position: fixed;
+    height: 100%;
+    width: 15px;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.leftpageborder {left: 0;}
+.rightpageborder {right: 0;}
+.toppageborder {top: 0;}
+.bottompageborder {bottom: 0;}
 
 .page {
 	display: flex;
