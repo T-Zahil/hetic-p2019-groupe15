@@ -2,21 +2,20 @@
 * NAVBAR
 * * * */
 .navbar {
-    align-self: flex-start;
-    self-align: inherit;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    height: 7vh;
-    width: 95vw;
+  align-self: flex-start;
+  self-align: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  height: 7vh;
+  width: 95vw;
 }
-
 .navbar__about {
-    color: white;
-    font-family: 'Dinpro';
-    font-size: 1.2rem;
-    text-decoration: none!important;
+  color: white;
+  font-family: 'Dinpro';
+  font-size: 1.2rem;
+  text-decoration: none!important;
 }
 
 /* * * *
@@ -24,15 +23,24 @@
 * * * */
 
 .menu__burgerOpen {
-    margin: 35px 0 0 35px;
-    position: fixed;
+  margin: 35px 0 0 35px;
+  position: fixed;
 }
-
 .menu__open {
     float: right;
     color: white !important;
     font: 500 1.2rem 'Dinpro';
 }
+.menu__burgerCross{
+	position: absolute;
+    top: 0;
+    left: 0;
+    margin: 15px;
+}
+.menu__burgerCrossimage{
+	width: 38px;
+}
+
 .overlay{
 	z-index:99;
 	position:absolute;
@@ -88,7 +96,7 @@
 * * * */
 .menu__about {
 	color: white !important;
-	font: 500 1.2rem 'Dinpro';
+	font: 300 1.2rem 'Dinpro';
 	text-transform: uppercase;
 	margin: 35px 35px 0 0;
 	position: fixed;
