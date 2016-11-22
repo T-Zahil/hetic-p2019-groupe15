@@ -8,11 +8,6 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
-
-    @include medium {
-        height: calc(100vh - 30px);
-        width: calc(100vw - 30px);
-    }
 }
 
 /* * * *
