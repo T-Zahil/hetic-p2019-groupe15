@@ -1,11 +1,11 @@
 @keyframes fadeStat {
-   from {
-    opacity:0;
-  }
+	from {
+		opacity:0;
+	}
 
-  to {
-    opacity:0.8;
-  }
+	to {
+		opacity:0.8;
+	}
 }
 
 .stats {
@@ -39,12 +39,13 @@
 .stats__months {
 	transition: all .5s;
 	width: 50%;
-	background-size: 145%;
+	background-size: cover;
 	background-repeat: no-repeat;
-    transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	position: relative;
 	&:hover {
-    	background-size: 150%;
+		transform: scale(1.1);
+		z-index: 50;
 	}
 	&:hover .stats__description {
 		display: flex;
