@@ -134,6 +134,8 @@
 }
 
 .month__backTheme {
+    display: flex;
+    align-items: flex-end;
     width: 100%;
     height: 35%;
     @include large {
@@ -141,6 +143,50 @@
         width:50%;
         order: -1;
     }
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    font-family: 'Dinpro';
+    flex-direction: column;
+    font-size: 1rem;
+    height: 27%;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    @include mobile {
+        display: none;
+    }
+}
+
+.infos__month {
+    order: 1;
+    height: 30%;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 6%;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+}
+
+.infos__line {
+    width: 1px;
+    height: 50%;
+    order: 2;
+    background-color: white;
+} 
+
+.infos__number {
+    height: 100%;
+    width: 18vw;
+    font-size: 11rem;
+    font-weight: 900;
+    opacity: 0.05;
+    margin-left: 5%;
+    order: 3;
 }
 
 .month__backSurvey {
