@@ -46,8 +46,8 @@ $(document).ready(function() {
         $('.overlay').addClass('overlay--open');
 
         setTimeout(function(){
-           $('.wrap-nav').addClass('wrap-nav--open');
-        }, 400);
+         $('.wrap-nav').addClass('wrap-nav--open');
+     }, 400);
 
     });
 
@@ -92,3 +92,17 @@ $(function() {
     $('.stats__months').Lazy();
 
 });
+
+/* * * *
+* SHARE FUNCTIONS
+* * * */
+function fbShare() {
+    window.open("http://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;
+};
+
+function twitterShare() { 
+    var u = location.href;
+    var t= "Check out this movie ! #flike via @flikeandshare"; 
+    window.open('http://twitter.com/share?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(t),'twitsharer','toolbar=0,status=0,width=626,height=436'); 
+    return false;    
+};
