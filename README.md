@@ -2,6 +2,10 @@
 
 Version 1.0.0
 
+# Demo
+
+You can see the project online here : http://92.222.195.29/retrospective/
+
 # Installation
 
 ```
