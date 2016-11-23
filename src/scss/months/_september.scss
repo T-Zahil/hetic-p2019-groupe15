@@ -1,0 +1,47 @@
+/* * * *
+* SEPTEMBER
+* * * */
+.september {
+
+    .month__backPicture {
+        background-size: cover;
+        background-position-x: 45%;
+    }
+
+    .month__backTheme {
+        background: $education;
+    }
+
+    .month__backNext {
+        background: $education;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 94%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 38%;
+        }
+    }
+
+    .answer__leftText {
+        @include mobile {
+            margin-bottom: 1vh;
+        }
+    }
+
+    .answer__rightText {
+        @include mobile {
+            margin-bottom: 10vh;
+        }
+    }
+
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $education;
+    }
+    
+}

@@ -1,0 +1,46 @@
+/* * * *
+* APRIL
+* * * */
+.april {
+    .month__backPicture {
+        background-size: cover;
+        background-position-x: 45%;
+    }
+
+    .month__backTheme {
+        background: $culture;
+    }
+
+    .month__backNext {
+        background: $culture;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 61%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 71%;
+        }
+    }
+
+    .answer__leftText {
+        @include mobile {
+            margin-bottom: 6.6vh;
+        }
+    }
+
+    .answer__rightText {
+        @include mobile {
+            margin-bottom: 4.4vh;
+        }
+    }
+
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $culture;
+    }
+    
+}

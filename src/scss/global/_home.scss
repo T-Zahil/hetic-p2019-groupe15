@@ -5,71 +5,58 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url(../img/bg1.jpeg) no-repeat fixed center; 
+	background: url(../img/bg1.jpeg) no-repeat fixed center;
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-
 	@include medium {
 		height: calc(100vh - 30px);
-		margin: 15px;
+		width: calc(100vw - 30px);
 	}
-}
-
-/* * * *
-* NAVBAR
-* * * */
-.navbar {
-	align-self: flex-start;
-	self-align: inherit;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	position: absolute;
-	height: 7vh;
-	width: 95vw;
-}
-
-.navbar__about {
-	color: white;
-	font-family: 'Dinpro';
-	font-weight: 500;
-	font-size: 1.2rem;
-	text-decoration: none!important;
+	@include large {
+        overflow-x: hidden;
+    }
 }
 
 /* * * *
 * TITLE BLOCK
 * * * */
 .home__title {
-	position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
 }
 
 .home__titleDate, .home__titleTitle {
-	position: absolute;
 	font-family: 'Europa';
+    text-transform: uppercase;
 	color: white;
 }
 
 .home__titleDate {
 	font-size: 12rem;
 	opacity: 0.2;
-
 	@include medium {
 		font-size: 18rem;
 	}
 }
 
 .home__titleTitle {
-	font-size: 3rem;
+    position: absolute;
+    font-size: 3rem;
+    @include medium {
+      font-size: 5rem;
+  }
+}
 
-	@include medium {
-		font-size: 5rem;
-	}
+.home__titlePunchline {
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Dinpro';
+    font-weight: 200;
 }
 
 /* * * *
@@ -79,15 +66,15 @@
 	display: flex;
 	justify-content: center;
 	align-self: flex-end;
-	position: relative;
+	position: absolute;
 }
 
 .home__scrollText {
 	align-self: flex-start;
 	position: absolute;
 	font-family: 'Dinpro';
-	font-weight: 300;
 	font-size: 1.5rem;
+    font-weight: 200;
 	color: white;
 }
 

@@ -1,0 +1,195 @@
+/* * * *
+* NAVBAR
+* * * */
+.wrapper {
+	position: fixed;
+	z-index: 999;
+}
+
+.navbar {
+    align-self: flex-start;
+    self-align: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 7vh;
+    width: 95vw;
+}
+
+.navbar__about {
+    color: white;
+    font-family: 'Dinpro';
+    font-size: 1.2rem;
+    text-decoration: none!important;
+}
+
+/* * * *
+* MENU
+* * * */
+.menu img {
+    width: 20px;
+}
+
+.menu__burgerOpen {
+    margin: 35px 0 0 35px;
+    position: fixed;
+    z-index: 99;
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu__open {
+    float: right;
+    color: white !important;
+    font: 500 1.2rem 'Dinpro';
+}
+
+.menu__burgerCross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    width: 20px;
+}
+
+.overlay {
+	z-index: 99;
+	position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    background-color: rgba(61,61,61,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 300 1.2rem 'Dinpro';
+    font-size:25px;
+    transition: all 1s ease;
+    @include medium {
+      margin: 15px;
+  }
+}
+
+.overlay--open {
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    transition: all .5s ease;
+}
+
+.wrap-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition: all 1s ease 1s;
+    @include medium {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.wrap-nav--open {
+    width: 50vw!important;
+    height: 60vh!important;
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.wrap-nav li{
+    list-style: none;
+    text-decoration: none;
+    @include medium{
+    	height: 21%;
+    	width: 30%;
+    	text-align: center;
+    }
+}
+
+.wrap-nav li a {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.wrap-nav li:hover{
+    text-decoration: line-through;
+}
+
+/* * * *
+* ABOUT
+* * * */
+.home__about {
+	color: white !important;
+	font: 200 0.9rem 'Dinpro';
+	text-transform: uppercase;
+	margin: 35px 35px 0 0;
+	position: absolute;
+	right: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.about {
+	z-index: 5;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(61,61,61,1);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Dinpro';
+	font-weight: medium;
+	color: white;
+	@include medium {
+		height: calc(100vh - 30px);
+		margin: 15px;
+		width: 98vw;
+	}
+}
+
+.about__container{
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	width: 75vw;
+	font: 200 0.9rem 'Dinpro';
+	letter-spacing: 1px;
+	padding-bottom: 10vh;
+	justify-content: center;
+	@include medium {
+		width: 60vw;
+	}
+	@include large {
+		width: 40vw;
+	}
+
+}
+
+.about__container h1 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.about__title {
+	opacity: 0.1;
+	font-size: 95px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: absolute;
+	bottom: -3vh;
+	margin: 0;
+	right: 14px;
+	display: block;
+	font-family: 'Europa';
+}

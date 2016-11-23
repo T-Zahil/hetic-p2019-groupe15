@@ -1,0 +1,47 @@
+/* * * *
+* JUNE
+* * * */
+.june {
+
+    .month__backPicture {
+        background-size: cover;
+        background-position-x: 45%;
+    }
+
+    .month__backTheme {
+        background: $ecology;
+    }
+
+    .month__backNext {
+        background: $ecology;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 53%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 78%;
+        }
+    }
+
+    .answer__leftText {
+        @include mobile {
+            margin-bottom: 7.8vh; 
+        }
+    }
+
+    .answer__rightText {
+        @include mobile {
+            margin-bottom: 3.2vh;
+        }
+    }
+
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $ecology;
+    }
+
+}

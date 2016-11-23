@@ -1,0 +1,47 @@
+/* * * *
+* JANUARY
+* * * */
+.january {
+
+    .month__backPicture {
+        background-size: cover;
+        background-position-x: 45%;
+    }
+    
+    .month__backTheme {
+        background: $innovation;
+    }
+
+    .month__backNext {
+        background: $innovation;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 39%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 91%;
+        }
+    }
+
+    .answer__leftText {
+        @include mobile {
+            margin-bottom: 9.2vh; 
+        }
+    }
+
+    .answer__rightText {
+        @include mobile {
+            margin-bottom: 1.9vh;
+        }
+    }
+
+    .answer__leftFigure, .answer__rightFigure {
+        background-color: $innovation;
+    }
+
+}

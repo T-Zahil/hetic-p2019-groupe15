@@ -1,0 +1,47 @@
+/* * * *
+* AUGUST
+* * * */
+.august {
+
+    .month__backPicture {
+        background-size: cover;
+        background-position-x: 45%;
+    }
+
+    .month__backTheme {
+        background: $sport;
+    }
+
+    .month__backNext {
+        background: $sport;
+    }
+
+    .answer__left--after {
+        @include large {
+            height: 78%;
+        }
+    }
+
+    .answer__right--after {
+        @include large {
+            height: 58%;
+        }
+    }
+
+    .answer__leftText {
+        @include mobile {
+            margin-bottom: 3.9vh;
+        }
+    }
+
+    .answer__rightText {
+        @include mobile {
+         margin-bottom: 7.1vh; 
+     }
+ }
+
+ .answer__leftFigure, .answer__rightFigure {
+    background-color: $sport;
+}
+
+}
