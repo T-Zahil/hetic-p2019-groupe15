@@ -55,7 +55,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 15px;
+    margin: 20px;
     width: 20px;
 
 }
@@ -63,19 +63,27 @@
 .overlay{
 	z-index: 99;
 	position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 0;
+    height: 0;
+    left: 0;
     background-color: rgba(61,61,61,1);
     display: flex;
     align-items: center;
     justify-content: center;
     font: 300 1.2rem 'Dinpro';
     font-size:25px;
+    transition: all 1s ease;
     @include medium {
-      height: calc(100vh - 30px);
+      // height: calc(100vh - 30px);
       margin: 15px;
-      width: 98vw;
+      // width: 98vw;
   }
+}
+
+.overlay--open {
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    transition: all .5s ease;
 }
 
 .wrap-nav {
@@ -83,14 +91,25 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 60vh;
-	@include medium {
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     height: 56%;
-     width: 65%;
+	// height: 60vh;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition: all 1s ease 1s;
+    @include medium {
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+     // height: 56%;
+     // width: 65%;
  }
+}
+
+.wrap-nav--open {
+    width: 50vw!important;
+    height: 60vh!important;
+    opacity: 1;
+    transition: all .5s ease;
 }
 
 .wrap-nav li{

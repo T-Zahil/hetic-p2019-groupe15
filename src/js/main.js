@@ -41,12 +41,19 @@ $(function() {
 * * * */
 $(document).ready(function() {
     $(".menu__burgerOpen").click(function() {
-        $(".overlay").fadeToggle(200);
+        $(".overlay").fadeToggle(0);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
+        $('.overlay').addClass('overlay--open');
+        setTimeout(function(){
+           $('.wrap-nav').addClass('wrap-nav--open');
+       }, 400);
     });
 });
+
 $('.overlay').on('click', function() {
-    $(".overlay").fadeToggle(200);
+    $(".overlay").fadeToggle(0);
+    $('.wrap-nav').removeClass('wrap-nav--open');
+    $('.overlay').removeClass('overlay--open');
     $(".menu__burgerOpen").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
