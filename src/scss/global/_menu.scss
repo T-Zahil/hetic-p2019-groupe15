@@ -2,13 +2,15 @@
 * NAVBAR
 * * * */
 .wrapper{
-	position: absolute;
+	position: fixed;
 	z-index: 999;
 }
 
 .menu {
     width: 100vw;
     height: 10vh;
+    position: absolute;
+    top: 0;
 }
 
 .navbar {
@@ -114,13 +116,14 @@
 /* * * *
 * ABOUT
 * * * */
-.menu__about {
+.home__about {
 	color: white !important;
 	font: 200 0.9rem 'Dinpro';
 	text-transform: uppercase;
 	margin: 35px 35px 0 0;
 	position: absolute;
 	right: 0;
+    top: 0;
     z-index: 99;
     cursor: pointer;
 }

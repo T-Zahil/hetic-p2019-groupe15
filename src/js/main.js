@@ -55,14 +55,14 @@ $('.overlay').on('click', function() {
 * FUNCTION DISPLAY ABOUT BLOCK
 * * * */
 $(document).ready(function() {
-    $(".menu__about").click(function() {
+    $(".home__about").click(function() {
         $(".about").fadeToggle(200);
         $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
 });
 $('.about').on('click', function() {
     $(".about").fadeToggle(200);
-    $(".menu__about").toggleClass('btn-open').toggleClass('btn-close');
+    $(".home__about").toggleClass('btn-open').toggleClass('btn-close');
     open = false;
 });
 
