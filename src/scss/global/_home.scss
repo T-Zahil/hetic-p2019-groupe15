@@ -10,13 +10,12 @@
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-
 	@include medium {
 		height: calc(100vh - 30px);
 		width: calc(100vw - 30px);
 	}
 	@include large {
-        overflow-x:hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -40,7 +39,6 @@
 .home__titleDate {
 	font-size: 12rem;
 	opacity: 0.2;
-
 	@include medium {
 		font-size: 18rem;
 	}
@@ -49,7 +47,6 @@
 .home__titleTitle {
     position: absolute;
     font-size: 3rem;
-
     @include medium {
       font-size: 5rem;
   }

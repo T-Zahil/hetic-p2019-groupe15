@@ -2,18 +2,19 @@
 * GLOBAL
 * * * */
 .menu__aboutOpen {
-float: right;
-color: white !important;
-font: 300 1.2rem 'Dinpro';
-text-transform: uppercase;
-margin-right:8vw;
-@include medium{
-	margin-right: 30px;
+	float: right;
+	color: white !important;
+	font: 300 1.2rem 'Dinpro';
+	text-transform: uppercase;
+	margin-right: 8vw;
+	@include medium {
+		margin-right: 30px;
+	}
 }
-}
+
 .about {
-	z-index:5;
-	position:absolute;
+	z-index: 5;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -32,7 +33,7 @@ margin-right:8vw;
 	}
 }
 
-.about__container{
+.about__container {
 	display: flex;
 	position: absolute;
 	flex-direction: column;
@@ -42,31 +43,28 @@ margin-right:8vw;
 	padding-bottom: 10vh;
 	justify-content: center;
 	@include medium {
-	width: 60vw;
+		width: 60vw;
 	}
 	@include large {
-	width: 40vw;
-	};
-
+		width: 40vw;
+	}
 }
 
 .about__container h1 {
 	font-size: 40px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-
 }
 
-	.aboutTitleEnd{
-		opacity: 0.1;
-		font-size: 95px;
-		font-weight: bold;
-		letter-spacing: 5px;
-		position: absolute;
-		bottom: -3vh;
-		margin: 0;
-		right: 14px;
-		display: block;
-		font-family: 'Europa';
-
-	}
+.aboutTitleEnd {
+	opacity: 0.1;
+	font-size: 95px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: absolute;
+	bottom: -3vh;
+	margin: 0;
+	right: 14px;
+	display: block;
+	font-family: 'Europa';
+}
