@@ -110,7 +110,7 @@ function animateMonth(name) {
 
     // Month content animation
     setTimeout(function(){
-        $(name).find('.month__infos').css({'transform': 'translateX(0)'});
+        $(name).find('.month__infos').css({'transform': 'translate(0)'});
     }, 1000);
 
     // Month content title animation

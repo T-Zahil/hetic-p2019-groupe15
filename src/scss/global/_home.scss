@@ -37,7 +37,7 @@
 }
 
 .home__titleDate {
-	font-size: 12rem;
+	font-size: 10rem;
 	opacity: 0.2;
 	@include medium {
 		font-size: 18rem;
@@ -46,7 +46,7 @@
 
 .home__titleTitle {
     position: absolute;
-    font-size: 3rem;
+    font-size: 2.7rem;
     @include medium {
       font-size: 5rem;
   }
@@ -54,7 +54,7 @@
 
 .home__titlePunchline {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Dinpro';
     font-weight: 200;
 }
