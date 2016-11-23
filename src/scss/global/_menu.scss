@@ -5,6 +5,12 @@
 	position: absolute;
 	z-index: 999;
 }
+
+.menu {
+    width: 100vw;
+    height: 10vh;
+}
+
 .navbar {
     align-self: flex-start;
     self-align: inherit;
@@ -15,6 +21,7 @@
     height: 7vh;
     width: 95vw;
 }
+
 .navbar__about {
     color: white;
     font-family: 'Dinpro';
@@ -35,11 +42,13 @@
     z-index: 99;
     width: 20px;
 }
+
 .menu__open {
     float: right;
     color: white !important;
     font: 500 1.2rem 'Dinpro';
 }
+
 .menu__burgerCross{
     position: absolute;
     top: 0;
@@ -74,13 +83,14 @@
 	justify-content: space-between;
 	height: 60vh;
 	@include medium {
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content: center;
-     height: 56%;
-     width: 65%;
- }
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       height: 56%;
+       width: 65%;
+   }
 }
+
 .wrap-nav li{
     list-style: none;
     text-decoration: none;
@@ -90,11 +100,13 @@
     	text-align: center;
     }
 }
+
 .wrap-nav li a {
     text-align: center;
     color: white;
     text-decoration: none;
 }
+
 .wrap-nav li:hover{
     text-decoration: line-through;
 }
@@ -109,8 +121,8 @@
 	margin: 35px 35px 0 0;
 	position: fixed;
 	right: 0;
-   z-index: 99;
-   cursor: pointer;
+ z-index: 99;
+ cursor: pointer;
 }
 
 .about {
@@ -184,17 +196,21 @@
     -webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
+
 .bullet-navigation.bullet-navigation--sticky {
     display: block;
 }
+
 .bullet-navigation li {
     display: block;
     margin: 0 1rem .5em 0;
 }
+
 .bullet-navigation li.active a {
     background: #fff;
     opacity: 0.3;
 }
+
 .bullet-navigation a {
     margin: 0;
     padding: 0;
@@ -207,6 +223,7 @@
     transition: .2s all linear;
     border-radius: 50%;
 }
+
 .bullet-navigation a:hover {
     background: #fff;
     opacity: 0.3;
@@ -220,14 +237,14 @@
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width:100%;
+    width: 100%;
     background-color: black;
     color: #fff;
-    font-size:0.8rem;
+    font-size: 0.8rem;
     font-family : 'Dinpro';
     font-weight: lighter;
     text-align: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
     padding: 5px 0;
     position: absolute;
     z-index: 1;
@@ -235,6 +252,7 @@
     right: 105%; 
     transition: all .2s ease-in-out; 
 }
+
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
@@ -245,8 +263,9 @@
     border-style: solid;
     border-color: transparent transparent transparent black;
 }
+
 .tooltip:hover .tooltiptext {
     transition: width 0.5s ease;
-    width:100px;
+    width: 100px;
     visibility: visible;
 }
