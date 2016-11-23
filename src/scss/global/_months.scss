@@ -22,7 +22,7 @@
     flex-direction: column;
     transition: all 1s ease 0s;
     @include mobile {
-        transform: translateX(110%);
+        transform: translateX(-110%);
     }
     @include large {
         transform: translateX(-110%);
