@@ -102,6 +102,7 @@ $(document).ready(function(){
 
 // This function will do the animation corresponding to the month on the screen
 function animateMonth(name) {
+
     //Month img animation
     setTimeout(function(){
         $(name).find(".month__backPicture").addClass('month__backPicture--active');
@@ -109,11 +110,10 @@ function animateMonth(name) {
 
     // Month content animation
     setTimeout(function(){
-        $(name).find('.month__infos').css({
-            'transform': 'translateX(0)',
-        });
+        $(name).find('.month__infos').css({'transform': 'translateX(0)'});
     }, 1000);
 
+    // Month content title animation
     setTimeout(function(){
         $(name).find('.month__infosTitle').addClass('month__infosTitle--up');
     }, 1500);
