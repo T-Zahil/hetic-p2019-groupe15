@@ -2,31 +2,31 @@
 * NAVBAR
 * * * */
 .wrapper{
-	position:fixed;
-	z-index:999;
+	position: absolute;
+	z-index: 999;
 }
 .navbar {
-  align-self: flex-start;
-  self-align: inherit;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
-  height: 7vh;
-  width: 95vw;
+    align-self: flex-start;
+    self-align: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 7vh;
+    width: 95vw;
 }
 .navbar__about {
-  color: white;
-  font-family: 'Dinpro';
-  font-size: 1.2rem;
-  text-decoration: none!important;
+    color: white;
+    font-family: 'Dinpro';
+    font-size: 1.2rem;
+    text-decoration: none!important;
 }
 
 /* * * *
 * MENU
 * * * */
 .menu img {
-  width: 20px;
+    width: 20px;
 }
 
 .menu__burgerOpen {
@@ -41,7 +41,7 @@
     font: 500 1.2rem 'Dinpro';
 }
 .menu__burgerCross{
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     margin: 15px;
@@ -50,8 +50,8 @@
 }
 
 .overlay{
-	z-index:99;
-	position:absolute;
+	z-index: 99;
+	position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: rgba(61,61,61,1);
@@ -68,22 +68,22 @@
 }
 
 .wrap-nav {
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	height: 60vh;
 	@include medium {
-    	flex-wrap: wrap;
-    	align-items: center;
-    	justify-content: center;
-    	height: 56%;
-    	width: 65%;
-    }
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     height: 56%;
+     width: 65%;
+ }
 }
 .wrap-nav li{
-    list-style:none;
-    text-decoration:none;
+    list-style: none;
+    text-decoration: none;
     @include medium{
     	height: 21%;
     	width: 30%;
@@ -91,9 +91,9 @@
     }
 }
 .wrap-nav li a {
-    text-align:center;
-    color:white;
-    text-decoration:none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 .wrap-nav li:hover{
     text-decoration: line-through;
@@ -109,13 +109,13 @@
 	margin: 35px 35px 0 0;
 	position: fixed;
 	right: 0;
-  	z-index: 99;
-  	cursor:pointer;
+   z-index: 99;
+   cursor: pointer;
 }
 
 .about {
-	z-index:5;
-	position:absolute;
+	z-index: 5;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -175,41 +175,41 @@
 /* TIMELINE NAVIGATION */
 
 .bullet-navigation {
-  display: none;
-  position: fixed;
-  right: 3rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+    display: none;
+    position: fixed;
+    right: 3rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
 }
 .bullet-navigation.bullet-navigation--sticky {
-  display: block;
+    display: block;
 }
 .bullet-navigation li {
-  display: block;
-  margin: 0 1rem .5em 0;
+    display: block;
+    margin: 0 1rem .5em 0;
 }
 .bullet-navigation li.active a {
-  background: #fff;
-  opacity: 0.3;
+    background: #fff;
+    opacity: 0.3;
 }
 .bullet-navigation a {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: .7rem;
-  height: .7rem;
-  background: #fff;
-  border: 3px solid white;
-  -webkit-transition: .2s all linear;
-  transition: .2s all linear;
-  border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    background: #fff;
+    border: 3px solid white;
+    -webkit-transition: .2s all linear;
+    transition: .2s all linear;
+    border-radius: 50%;
 }
 .bullet-navigation a:hover {
-  background: #fff;
-  opacity: 0.3;
+    background: #fff;
+    opacity: 0.3;
 }
 
 /* Tooltip container */
