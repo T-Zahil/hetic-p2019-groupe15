@@ -2,86 +2,87 @@
 * GLOBAL
 * * * */
 .home {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: url(../img/bg1.jpeg) no-repeat fixed center;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	@include medium {
-		height: calc(100vh - 30px);
-		width: calc(100vw - 30px);
-	}
-	@include large {
-        overflow-x: hidden;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/bg1.jpg) no-repeat fixed center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  @include medium {
+    height: calc(100vh - 30px);
+    width: calc(100vw - 30px);
+  }
+  @include large {
+    overflow-x: hidden;
+  }
 }
 
 /* * * *
 * TITLE BLOCK
 * * * */
 .home__title {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 7rem;
 }
 
-.home__titleDate, .home__titleTitle {
-	font-family: 'Europa';
-    text-transform: uppercase;
-	color: white;
+.home__titleDate,
+.home__titleTitle {
+  font-family: 'Europa';
+  text-transform: uppercase;
+  color: white;
 }
 
 .home__titleDate {
-	font-size: 10rem;
-	opacity: 0.2;
-	@include medium {
-		font-size: 18rem;
-	}
+  font-size: 10rem;
+  opacity: 0.2;
+  @include medium {
+    font-size: 18rem;
+  }
 }
 
 .home__titleTitle {
-    position: absolute;
-    font-size: 2.7rem;
-    @include medium {
-      font-size: 5rem;
+  position: absolute;
+  font-size: 2.7rem;
+  @include medium {
+    font-size: 5rem;
   }
 }
 
 .home__titlePunchline {
-    color: white;
-    font-size: 1.2rem;
-    font-family: 'Dinpro';
-    font-weight: 200;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Dinpro';
+  font-weight: 200;
 }
 
 /* * * *
 * SCROLL BLOCK
 * * * */
 .home__scroll {
-	display: flex;
-	justify-content: center;
-	align-self: flex-end;
-	position: absolute;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  position: absolute;
 }
 
 .home__scrollText {
-	align-self: flex-start;
-	position: absolute;
-	font-family: 'Dinpro';
-	font-size: 1.5rem;
-    font-weight: 200;
-	color: white;
+  align-self: flex-start;
+  position: absolute;
+  font-family: 'Dinpro';
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
 }
 
 .home__scrollLine {
-	align-self: flex-end;
-	width: 1.4px;
-	height: 8vh;
-	margin-top: 5vh;
-	background-color: white;
+  align-self: flex-end;
+  width: 1.4px;
+  height: 8vh;
+  margin-top: 5vh;
+  background-color: white;
 }
