@@ -1,17 +1,17 @@
 // Thanks to J.Clerc for the gulpfile organisation
 
-var gulp 		 = require('gulp'),
-	sass         = require('gulp-sass'),
-	sync         = require('browser-sync').create(),
-	autoprefixer = require('gulp-autoprefixer'),
-	imagemin     = require('gulp-imagemin'),
-	sourcemaps 	 = require('gulp-sourcemaps'),
-	concat		 = require('gulp-concat'),
-	plumber      = require('gulp-plumber'),
-	uglify		 = require('gulp-uglify'),
-    modernizr    = require('gulp-modernizr');
+var gulp         = require('gulp');
+var sass         = require('gulp-sass');
+var sync         = require('browser-sync').create();
+var autoprefixer = require('gulp-autoprefixer');
+var imagemin     = require('gulp-imagemin');
+var sourcemaps   = require('gulp-sourcemaps');
+var concat       = require('gulp-concat');
+var plumber      = require('gulp-plumber');
+var uglify       = require('gulp-uglify');
+var modernizr    = require('gulp-modernizr');
 
-// Task HTML
+// Task HTML, thanks to J.Clerc
 gulp.task('html', () => {
     gulp.src('src/*.html')
     .pipe(plumber())
@@ -19,7 +19,7 @@ gulp.task('html', () => {
     .pipe(sync.stream());
 });
 
-// Task style
+// Task style, thanks to J.Clerc
 gulp.task('style', function() {
     gulp.src('src/scss/**/*.scss')
     .pipe(plumber())
@@ -33,7 +33,7 @@ gulp.task('style', function() {
     .pipe(sync.stream());
 });
 
-// Task Fonts
+// Task Fonts, thanks to J.Clerc
 gulp.task('fonts', function() {
     gulp.src('src/fonts/*')
     .pipe(plumber())
@@ -41,7 +41,7 @@ gulp.task('fonts', function() {
     .pipe(sync.stream());
 });
 
-// Task scripts
+// Task scripts, thanks to J.Clerc
 gulp.task('scripts', function() {
     return gulp.src([
         'node_modules/waypoints/lib/jquery.waypoints.min.js',
@@ -58,7 +58,7 @@ gulp.task('scripts', function() {
     .pipe(sync.stream());
 });
 
-// Hot reload 
+// Hot reload, thanks to J.Clerc
 gulp.task('hot-reload', function() {
     sync.init({ server: 'dist/' });
     gulp.watch('src/*.html', ['html']);
@@ -76,12 +76,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img/'));
 });
 
-//Task Modernizr
+//Task Modernizr, thanks to J.Clerc
 gulp.task('modernizr', function() {
   gulp.src('src/js/*.js')
     .pipe(modernizr())
     .pipe(gulp.dest("dist/js"))
 });
 
-//Default run all the tasks
+//Default run all the tasks, thanks to J.Clerc
 gulp.task('default', ['scripts', 'fonts', 'style', 'images', 'html', 'hot-reload', 'modernizr']);
